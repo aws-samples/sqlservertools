@@ -34,9 +34,7 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
   ## Execution
   
   The tool will run from cmd prompt in 2 different modes Windows or Sql server :
-  
-  
-	  
+
    - **Windows Authentication** 	
 
       c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
@@ -54,8 +52,13 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
    - **Sql Server Authentication**
    
     c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
-      
+
+   For Help with Commands:
+   
+   c:\RDSDiscoveryGuide\RDSDiscovery.exe -options help
+  
+## Ouput 	  
     
-The discovery will take few minutes and will generate an excel sheet .
+The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
 
 The excel sheet will be  placed in c:\RDSDiscoveryGuide\out
