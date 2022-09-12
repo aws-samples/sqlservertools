@@ -56,6 +56,8 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
    For Help with Commands:
    
    c:\RDSDiscoveryGuide\RDSDiscovery.exe -options help
+   **Or you can run the Bat file if you can'r or you don;t want to run exe .
+   
   
 ## Ouput 	  
     
