@@ -72,9 +72,13 @@ If you receive error similar to te one below , that means the sqlserver PS modul
 ![image](https://user-images.githubusercontent.com/95581204/194915978-410cd417-9dec-4a83-a4c5-9030cd8942fd.png)
 To install the Powershell module for sql server ,first make sure you start powershell as admin .
 then run below command seperatley
+
 1-Set-ExecutionPolicy RemoteSigned
+
 2-Install-module -Name sqlserver
+
 3-Import-Module sqlserver -DisableNameChecking;
+
 Once this is done and to verify sqlserver module has been successfuly loaded run below command
  ## Get-Module -name sqlserver 
  ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
