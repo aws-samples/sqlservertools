@@ -29,8 +29,10 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
    
 
  ## Prerequisites
-  The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds. recommendation.
-  You can still run the Tool without excel Sheet it will just not generate the RDS instance. Recommendation 
+  The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation.
+  You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation.
+  Sqlserver Module needed to be importnaed and installed into your powershell.
+  TCP port to your sql server wehther default or not needs to be opened .
   ## Execution
   
   The tool will run from cmd prompt in 2 different modes Windows or Sql server :
@@ -64,3 +66,20 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
 
 The excel sheet will be  placed in c:\RDSDiscoveryGuide\out
+
+## Troubleshooting
+If you receive error similar to te one below , that means the sqlserver PS module is not loaded into your system 
+![image](https://user-images.githubusercontent.com/95581204/194915978-410cd417-9dec-4a83-a4c5-9030cd8942fd.png)
+To install the Powershell module for sql server ,first make sure you start powershell as admin .
+then run below command seperatley
+1-Set-ExecutionPolicy RemoteSigned
+2-Install-module -Name sqlserver
+3-Import-Module sqlserver -DisableNameChecking;
+Once this is done and to verify sqlserver module has been successfuly loaded run below command
+ ## Get-Module -name sqlserver 
+ ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
+
+## contact 
+For help and support reach out to bacrifai@amazon.com
+
+
