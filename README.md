@@ -4,7 +4,7 @@ RDS Discovery Tool is a lightweight ,it provides a capability to scan a fleet of
 automated checks for 20+features , validates supportability of the  enabled features on RDS, and generates a
 report which provides recommendation to migrate to RDS, RDS Custom or EC2 compatible. 
 
-:warning: Although this is a on noninvasive script , make sure you test and run in Dev before you run the scrip in Prod 
+:warning: Although this is a on non invasive script , make sure you test and run in Dev before you run the scrip in Prod 
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
