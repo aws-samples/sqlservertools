@@ -8,6 +8,10 @@ report which provides recommendation to migrate to RDS, RDS Custom or EC2 compat
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
+## Contact 
+For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot  on my calendar:
+https://calendly.com/rdstools/30min.
+
 ## Installation
 1.Download the Tool on c:\ drive 
 
@@ -83,9 +87,6 @@ Once this is done and to verify sqlserver module has been successfuly loaded run
  ## Get-Module -name sqlserver 
  ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
 
-## contact 
-For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot  on my calendar:
-https://calendly.com/rdstools/30min.
 
 
 
