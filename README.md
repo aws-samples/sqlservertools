@@ -84,6 +84,8 @@ Once this is done and to verify sqlserver module has been successfuly loaded run
  ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
 
 ## contact 
-For help and support reach out to bacrifai@amazon.com
+For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot  on my calendar:
+https://calendly.com/rdstools/30min.
+
 
 
