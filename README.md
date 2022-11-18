@@ -43,25 +43,25 @@ https://calendly.com/rdstools/30min.
 
    - **Windows Authentication** 	
 
-      c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
+      c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
    - **Sql Server Authentication**
    
-     c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
+     c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
      
 			   "Login"  should be member of the Admin Group.
  **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
  
    - **Windows Authentication** 	
 
-     c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
+     c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
      
    - **Sql Server Authentication**
    
-    c:\RDSDiscoveryGuide\RDSDiscovery.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
+    c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
 
    For Help with Commands:
    
-   c:\RDSDiscoveryGuide\RDSDiscovery.exe -options help
+   c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -options help
    **Or you can run the Bat file if you can't or you don't want to run exe .
    
   
