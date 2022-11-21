@@ -15,17 +15,17 @@ https://calendly.com/rdstools/30min.
 ## Installation
 1.Download the Tool on c:\ drive 
 
-2.extract the zip file on c:\RDSDiscoveryGuide
+2.extract the zip file on c:\RDSTools
 
 3.Once unzipped it should look like this:
 
-     c:\RDSDiscoveryGuide
+     c:\RDSTools
      
-    \c:\RDSDiscoveryGuide\IN
+    \c:\RDSDTools\IN
     
-     \c:\RDSDiscoveryGuide\Out
+     \c:\RDSTools\Out
       
-  "In" Directory will have 3 files "Serverstemplate" , RDSSQLInstances.xlsx  and LimitationQueries.sql.
+  "In" Directory will have 3 files "Serverstemplate" , AWSInstances.xlsx  and LimitationQueries.sql.
   
    using the Server Template as a guide create a list of all our servers , you can use IP  or ServerName and if your port is not Default port 
    enter the port as well  i.e. servername,1435 or xxx.xxx.xxx.xxx,1435.                                                                                                    Save the file in the "In" directory. once the server list has been created, you should be ready to run the tool .
@@ -43,25 +43,25 @@ https://calendly.com/rdstools/30min.
 
    - **Windows Authentication** 	
 
-      c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
+      c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
    - **Sql Server Authentication**
    
-     c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
+     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
      
 			   "Login"  should be member of the Admin Group.
  **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
  
    - **Windows Authentication** 	
 
-     c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
+     C:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
      
    - **Sql Server Authentication**
    
-    c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
+    C:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
 
    For Help with Commands:
    
-   c:\RDSDiscoveryGuide\RDSDiscoveryguide.exe -options help
+   C:\RDSTools\Rdsdiscovery.bat -options help
    **Or you can run the Bat file if you can't or you don't want to run exe .
    
   
@@ -69,7 +69,7 @@ https://calendly.com/rdstools/30min.
     
 The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
 
-The excel sheet will be  placed in c:\RDSDiscoveryGuide\out
+The excel sheet will be  placed in c:\RDSTools\out
 
 ## Troubleshooting
 If you receive error similar to te one below , that means the sqlserver PS module is not loaded into your system 
