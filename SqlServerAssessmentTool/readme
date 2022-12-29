@@ -1,0 +1,41 @@
+The tool is a free lightweight tool that simplifies the assessment of your SQL Server workloads on premise to determine  system utilization required for right sizing on Amazon RDS.
+The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS Suggestion on how to right size on AWS.The tool can be run against a single or multiple MS SQL Server instances.
+
+the Tool can be downloaded from Github 
+
+The Tool can run an automated mode or Manaul :
+
+Automated Assessment 
+
+How does the tool work?
+The tool runs from the cmd prompt:
+
+For Sql server authentication:
+
+C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60
+
+for Windows authentication:
+
+C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60
+
+input Paramter:
+
+auth    . S for Sql server , W for windows Authentication
+login   . Sql server login ( if option is 'S')
+password . Sql server password ( if option is 'S')
+collectiontime . Collectiontime in minutes 
+sqlserverendpoint='C:\RDSTools\out\RdsDiscovery.csv'  . Server list to be assessed by defualt the Tool will read the output from rdsdiscovery tool .
+options  . 
+upload , for manual assessmnet upload ( more about this option , in the manual assessmnet section)
+C  , cleanup
+T , Terminate the assessment before the collectiontime end .
+The Tool will create a Sqlagent Job that will run every minutes to populate 5 tables created in msdb:
+
+Sql_collectnioStatus: this table will have the collection job information, start time finish time and status.
+Sql_CPucollection: this table will collect 3 key metrics Sql server CPU utilization, system Idle, and other Process Utilization. All 3 metrics are captured as percentage
+Sql_DbIO: this table will capture user DB IO between each collection time (the Delta)
+Sql DBIoTotal: this table will capture user DB Total IO (Read, Write)
+Sql_MemCollection: the table will capture Sql Server Memory Usage, Sql MaxMemory target, os Total Memory OS Available Memory and PLE (more about those metrics in Appendix A).
+You can re-run command C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60  anytime to check on status and remaining time 
+
+If collection still running the tool will tell you how many minutes is left (Fig 2) otherwise it will generate the output files and recommendation
