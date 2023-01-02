@@ -1,4 +1,5 @@
-The SqlAssessment tool is a free lightweight tool that simplifies the assessment of your SQL Server workloads on premise to determine system utilization required for
+## SQLServerAssessment Tool 
+This is a free lightweight tool that simplifies the assessment of your SQL Server workloads on premise to determine system utilization required for
 right sizing on Amazon RDS.
 The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS Suggestion on how to right size on AWS.
 The tool can be run against a single or multiple MS SQL Server instances.
@@ -87,6 +88,8 @@ The tool will generate 4 files per Server in CSV format, th files will be placed
 * CPUinfo: Server CPU Information 
 
 One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will anaylze CPU and Memory data collected during the timeframe and make recommendation .
+![image](https://user-images.githubusercontent.com/95581204/210282135-52584f43-32f0-4fb0-8477-8f954e3ba892.png)
+
 Each Metric will have one of the 3 recommendations :
 
 1-sacle up
@@ -119,8 +122,11 @@ The Tool comes with a Sql Script that you can run from query analyzer or  you ca
 the script will create temp table to store the data as supposed to regular tables 
 
 the script wil take collectiontime as an input .
+![image](https://user-images.githubusercontent.com/95581204/210281908-bc6d8423-6cf2-4235-a62a-17b2945e6f13.png)
 
-Once the collectiontime is  done , the script will generate the output 
+
+Once the collectiontime is  done , the script will generate below output 
+![image](https://user-images.githubusercontent.com/95581204/210281948-f8bcbea9-b32e-4525-b0b6-6836588ff27c.png)
 
 Save the output as CSV , without the headers ,and place the file in C:\RdsTool\upload 
 
