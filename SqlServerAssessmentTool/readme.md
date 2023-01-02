@@ -19,7 +19,7 @@ https://calendly.com/rdstools/30min.
 
 3.Once unzipped it should look like this:
 
-     c:\RDSTools
+    c:\RDSTools
      
     \c:\RDSDTools\IN
     
@@ -31,26 +31,32 @@ The Tool can run in automated mode or Manaul :
 
 ## Automated Assessment 
 The tool runs from the cmd prompt:
-The Tool  by default take in the output from RdsDiscovery tool "c:\RDSTool\out\RdsDiscovery.CSV" and only run assessmnet against server that are ##RDS or RDS Custom compatible .
+The Tool  by default take in the output from RdsDiscovery tool "c:\RDSTool\out\RdsDiscovery.CSV" and only run assessmnet against server that are **RDS or RDS Custom compatible.**
 
 You can as well create your own sql server list using "Serverstemplate" in c:\RDSTools\in as a guide and pass it on as a paramter to the tool .
-Please note that the crreated file has to be .txt format( more about that later) 
+Please note that the created file has to be .txt format( more about that later) 
 
 For Sql server authentication:
 
-C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 
-## -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
-C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt 
-##-- the assessmnet will run againt list of servers in  server.txt
+**C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60**
+
+ -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
+ 
+ **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt** 
+
+-- the assessmnet will run againt list of servers in  server.txt
 
 for Windows authentication:
 
-C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60
-## -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
-C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt
-##-- the assessmnet will run againt list of servers in  server.txt
+ **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60**
 
-input Paramters:
+ -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
+ 
+**C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt**
+
+-- the assessmnet will run againt list of servers in  server.txt
+
+Input Paramters:
 
 * auth    . S for Sql server , W for windows Authentication
 * login   . Sql server login ( if option is 'S')
@@ -58,7 +64,7 @@ input Paramters:
 * collectiontime . Collectiontime in minutes 
 * sqlserverendpoint='C:\RDSTools\out\RdsDiscovery.csv'  . Server list to be assessed by defualt the Tool will read the output from rdsdiscovery tool .
 * options  . 
-* upload , for manual assessmnet upload ( more about this option , in the manual assessmnet section)
+    * upload , for manual assessmnet upload ( more about this option , in the manual assessmnet section)
     * C  , cleanup
     * T , Terminate the assessment before the collectiontime end .
     
@@ -81,16 +87,19 @@ The tool will generate 4 files per Server in CSV format, th files will be placed
 * CPUinfo: Server CPU Information 
 
 One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will anaylze CPU and Memory data collected during the timeframe and make recommendation .
-Each Metric will have one of the 3 recommendations (Fig 4):
+Each Metric will have one of the 3 recommendations :
+
 1-sacle up
+
 2-scale down
+
 3-Load is acceptable
 
 Scaling up or down matrix.
-CPU&Memory scaling up or down matrix
-CPU&Memory >= 30 Scale Down
-CPU&Memory >=30<=50 Load acceptable
-CPU&Memory >=50<=80 Scale Up
+* CPU&Memory scaling up or down matrix
+* CPU&Memory >= 30 Scale Down
+* CPU&Memory >=30<=50 Load acceptable
+* CPU&Memory >=50<=80 Scale Up
 
 The tool will make RDS recommendation based on current on prem architecture and  based on CPU,Memory and IOPS utilization.
  
@@ -105,7 +114,7 @@ To terminate the jobs before  collection is done  C:\RDSTools>SqlServerAssessmen
 
 If you would rather use your preferred third party tool to collect the assessment or maybe due to strict security requirement your are not able to run the automated collections .The tool has the capabilities to manually read csv files as long as they have certain fromat.
 
-The Tool came with a Sql Script that  you can run from query analyzer or  you can schedule it  . c:\RDsTools\in\Sqlassessmentmanaulcollection.sql , the script will mimic the same automated collections that runs through the tool . 
+The Tool comes with a Sql Script that you can run from query analyzer or  you can schedule it  . c:\RDsTools\in\Sqlassessmentmanaulcollection.sql , the script will mimic the same automated collections that runs through the tool . 
 
 the script will create temp table to store the data as supposed to regular tables 
 
