@@ -164,4 +164,4 @@ L : Sql server Version
 
 M: CollectionTime
 
-## This Tool has very low footprint on your SQl server and it is safe to run against your Production server, to verify run it against any server with no load an observer the CPU memory and IOPS collected.
+**This Tool has very low footprint on your SQl server and it is safe to run against your Production server, to verify run it against any server with no load an observer the CPU memory and IOPS collected.**
