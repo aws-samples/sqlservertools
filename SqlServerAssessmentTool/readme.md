@@ -4,7 +4,7 @@ right sizing on Amazon RDS.
 The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS Suggestion on how to right size on AWS.
 The tool can be run against a single or multiple MS SQL Server instances.
 
-⚠️ Although this is a non invasive script , make sure you test and run in Dev before you run the script in Prod 
+⚠️ Although this is a non-invasive script , make sure you test and run in Dev before you run the script in Prod 
 
 ##License
 This library is licensed under the MIT-0 License. See the LICENSE file.
@@ -28,36 +28,36 @@ https://calendly.com/rdstools/30min.
     
     \c:\RDSTools\upload
      
-The Tool can run in automated mode or Manaul :
+The Tool can run in automated mode or Manual :
 
 ## Automated Assessment 
 The tool runs from the cmd prompt:
-The Tool  by default take in the output from RdsDiscovery tool "c:\RDSTool\out\RdsDiscovery.CSV" and only run assessmnet against server that are **RDS or RDS Custom compatible.**
+The Tool  by default take in the output from RdsDiscovery tool "c:\RDSTool\out\RdsDiscovery.CSV" and only run assessment against server that are **RDS or RDS Custom compatible.**
 
-You can as well create your own sql server list using "Serverstemplate" in c:\RDSTools\in as a guide and pass it on as a paramter to the tool .
+You can as well create your own sql server list using "Serverstemplate" in c:\RDSTools\in as a guide and pass it on as a parameter to the tool .
 Please note that the created file has to be .txt format( more about that later) 
 
 For Sql server authentication:
 
 **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60**
 
- -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
+ -- The assessment will run against c:\RDSTool\out\RdsDiscovery.CSV
  
  **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt** 
 
--- the assessmnet will run againt list of servers in  server.txt
+-- the assessment will run againt list of servers in  server.txt
 
 for Windows authentication:
 
  **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60**
 
- -- The assessmnet will run against c:\RDSTool\out\RdsDiscovery.CSV
+ -- The assessment will run against c:\RDSTool\out\RdsDiscovery.CSV
  
 **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt**
 
--- the assessmnet will run againt list of servers in  server.txt
+-- the assessment will run against list of servers in  server.txt
 
-Input Paramters:
+Input Parameters:
 
 * auth    . S for Sql server , W for windows Authentication
 * login   . Sql server login ( if option is 'S')
@@ -87,7 +87,7 @@ The tool will generate 4 files per Server in CSV format, th files will be placed
 * SQLDB_IO: User and tempdb, Total IOPS, MB Read and Write per collection time (collection time is one minute)
 * CPUinfo: Server CPU Information 
 
-One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will anaylze CPU and Memory data collected during the timeframe and make recommendation .
+One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will analyze CPU and Memory data collected during the timeframe and make recommendation .
 ![image](https://user-images.githubusercontent.com/95581204/210282135-52584f43-32f0-4fb0-8477-8f954e3ba892.png)
 
 Each Metric will have one of the 3 recommendations :
@@ -115,13 +115,13 @@ To terminate the jobs before  collection is done  C:\RDSTools>SqlServerAssessmen
 
 ## Manual  Assessment 
 
-If you would rather use your preferred third party tool to collect the assessment or maybe due to strict security requirement your are not able to run the automated collections .The tool has the capabilities to manually read csv files as long as they have certain fromat.
+If you would rather use your preferred third party tool to collect the assessment or maybe due to strict security requirement your are not able to run the automated collections .The tool has the capabilities to manually read csv files as long as they have certain format.
 
 The Tool comes with a Sql Script that you can run from query analyzer or  you can schedule it  . c:\RDsTools\in\Sqlassessmentmanaulcollection.sql , the script will mimic the same automated collections that runs through the tool . 
 
 the script will create temp table to store the data as supposed to regular tables 
 
-the script wil take collectiontime as an input .
+the script will take collectiontime as an input .
 ![image](https://user-images.githubusercontent.com/95581204/210281908-bc6d8423-6cf2-4235-a62a-17b2945e6f13.png)
 
 
@@ -163,3 +163,5 @@ K: Sql server Edition
 L : Sql server Version
 
 M: CollectionTime
+
+## This Tool has very low footprint on your SQl server and it is safe to run against your Production server, to verify run it against any server with no load an observer the CPU memory and IOPS collected.
