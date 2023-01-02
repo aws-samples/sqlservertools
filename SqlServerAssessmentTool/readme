@@ -5,9 +5,10 @@ The tool can be run against a single or multiple MS SQL Server instances.
 
 :warning: Although this is a non invasive script , make sure you test and run in Dev before you run the script in Prod 
 
-## License
+##License
 This library is licensed under the MIT-0 License. See the LICENSE file.
-## Contact 
+
+##Contact 
 For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot on my calendar:
 https://calendly.com/rdstools/30min.
 
