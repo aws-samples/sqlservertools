@@ -4,6 +4,7 @@ The tool captures CPU, Memory, IOPS and Throughput utilization based on predefin
 The tool can be run against a single or multiple MS SQL Server instances.
 
 :warning: Although this is a non invasive script , make sure you test and run in Dev before you run the script in Prod 
+
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.
 ## Contact 
