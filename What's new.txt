@@ -1,0 +1,8 @@
+Bug Fixes.
+1/8/2023 Fixed  RDsCustom instance type recoomendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
+
+what's coming next
+TCO (Total Cost of Ownbership) module.
+
+
+
