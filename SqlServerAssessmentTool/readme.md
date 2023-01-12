@@ -1,7 +1,7 @@
 ## SQLServerAssessment Tool 
 This is a free lightweight tool that simplifies the assessment of your SQL Server workloads on premise to determine system utilization required for
 right sizing on Amazon RDS.
-The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS Suggestion on how to right size on AWS.
+The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS suggestion on how to right size on AWS.
 The tool can be run against a single or multiple MS SQL Server instances.
 
 ⚠️ Although this is a non-invasive script , make sure you test and run in Dev before you run the script in Prod 
