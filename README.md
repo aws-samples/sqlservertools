@@ -1,8 +1,12 @@
 # sqlservertools
-This Repository is dedicated to help CX migrating their workload into AWS, what I am aiming here is to ease their journey and make thing easier through automation and tooling.
+This Repository is dedicated to help CX migrating their workload into AWS, what I am aiming here is to ease the journey and make thing easier through automation and tooling.
+
 This repository has 2 tools:
+
 1-	RdsDiscovery
+
 2-	Sql server assessment 
+
 ## RDS Discovery 
 RDS Discovery Tool is a lightweight, it provides a capability to scan a fleet of on-prem SQl Servers and does
 automated checks for 20+features, validates supportability of the enabled features on RDS, and generates a
