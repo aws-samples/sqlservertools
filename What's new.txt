@@ -1,6 +1,6 @@
 Bug Fixes.
 1/8/2023 Fixed  RDsCustom instance type recommendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
-1/11/2023 Fixed Toptaliops and throughput calcualtion , they were showing 0 in previous release.
+1/11/2023 Fixed Totaliops and throughput calcualtion , they were showing 0 in previous release.
 
 what's coming next
 TCO (Total Cost of Ownbership) module.
