@@ -21,7 +21,7 @@ https://calendly.com/rdstools/30min.
 
      c:\RDSTools
      
-    \c:\RDSDTools\IN
+    \c:\RDSTools\IN
     
      \c:\RDSTools\Out
       
@@ -43,21 +43,21 @@ https://calendly.com/rdstools/30min.
 
    - **Windows Authentication** 	
 
-      c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
+      c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSTools\in\servers.txt
    - **Sql Server Authentication**
    
-     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
+     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSTools\in\servers.txt  
      
 			   "Login"  should be member of the Admin Group.
  **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
  
    - **Windows Authentication** 	
 
-     C:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
+     C:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSTools\in\servers.txt -options rds
      
    - **Sql Server Authentication**
    
-    C:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
+    C:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSTools\in\servers.txt  -options rds
 
    For Help with Commands:
    
