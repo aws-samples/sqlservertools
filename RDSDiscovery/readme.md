@@ -36,7 +36,7 @@ https://calendly.com/rdstools/30min.
   The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation.
   You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation.
   Sqlserver Module needed to be importnaed and installed into your powershell.
-  TCP port to your sql server wehther default or not needs to be opened .
+  TCP port has to be opened to your Sql Server(s).
   ## Execution
   
   The tool will run from cmd prompt in 2 different modes Windows or Sql server :
