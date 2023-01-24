@@ -24,7 +24,7 @@ The Script will only works on windows with PowerShell Script and Excel Sheet . T
 
     c:\RDSTools
      
-    \c:\RDSDTools\IN
+    \c:\RDSTools\IN
     
     \c:\RDSTools\Out
     
@@ -53,7 +53,7 @@ for Windows authentication:
 
  **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60**
 
- -- The assessment will run against c:\RDSTool\out\RdsDiscovery.CSV
+ -- The assessment will run against c:\RDSTools\out\RdsDiscovery.CSV
  
 **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt**
 
