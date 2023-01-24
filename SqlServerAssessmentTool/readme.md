@@ -13,6 +13,8 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot on my calendar:
 https://calendly.com/rdstools/30min.
 
+## Prerequisites
+The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation. You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation. Sqlserver Module needed to be importnaed and installed into your powershell. TCP port has to be opened to your Sql Server(s).
 ## Installation
 1.Download the Tool on c:\ drive 
 
