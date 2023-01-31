@@ -27,7 +27,7 @@ Sql server instances.
 SSAT is able (by default) to read the output generated from RdsDiscovery or you can run pass in a list of servers that you would like to run an assessment.
 
 
-##What’s coming Next 
+## What’s coming Next 
 TCO (Total cost of ownership). A new module is in development at the moment will help in creating a TCO for all your Sql server fleet including cost optimization
 and consolidation.
 
