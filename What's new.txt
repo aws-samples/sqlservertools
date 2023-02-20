@@ -1,11 +1,15 @@
 Bug Fixes.
-1/8/2023 Fixed  RDsCustom instance type recommendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
-1/11/2023 Fixed Totaliops and throughput calcualtion , they were showing 0 in previous release.
-1/19/2023 Fixed DB Used Space issue , it was erroring out on conversion error .
-1/22/2023 Fixed Issue with instance sizing with High  IOps and throughput 
+2/20/2023  The Tool will not error out on excel sheet if excel is not installed 
+2/20/2023   added the  iops and trhoughput as part of scaling up .
 1/30/2023  updated null in the Awsinstance excel sheet.
+1/22/2023 Fixed Issue with instance sizing with High  IOps and throughput 
+1/19/2023 Fixed DB Used Space issue , it was erroring out on conversion error .
+1/11/2023 Fixed Totaliops and throughput calcualtion , they were showing 0 in previous release.
+1/8/2023 Fixed  RDsCustom instance type recommendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
+
 what's coming next
 TCO (Total Cost of Ownbership) module.
+DB Migration
 
 
 
