@@ -42,12 +42,18 @@ https://calendly.com/rdstools/30min.
   The tool will run from cmd prompt in 2 different modes Windows or Sql server :
 
    - **Windows Authentication** 	
-
+	by default the tool will read the sqlserverendoint from c:\RDSTools\in\servers.txt 
+	
+	c:\RDSTools\Rdsdiscovery.bat -auth W 
+	
+	otherwise if your serverlist sits on another Direcory you can pass the  location as shown below 
+	
       c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSTools\in\servers.txt
+     
    - **Sql Server Authentication**
    
-     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSTools\in\servers.txt  
-     
+     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  
+           
 			   "Login"  should be member of the Admin Group.
  **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
  
