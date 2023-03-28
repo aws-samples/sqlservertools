@@ -74,8 +74,8 @@ The excel sheet will be  placed in c:\RDSTools\out
 ## Troubleshooting
 If you receive error similar to the one below , that means the sqlserver PS module is not loaded into your system 
 ![image](https://user-images.githubusercontent.com/95581204/194915978-410cd417-9dec-4a83-a4c5-9030cd8942fd.png)
-To install the Powershell module for sql server ,first make sure you start powershell as admin .
-then run below command seperatley
+To install the PowerShell module for SQl server, first make sure you start PowerShell as admin.
+then run below command separately
 
 1-Set-ExecutionPolicy RemoteSigned
 
