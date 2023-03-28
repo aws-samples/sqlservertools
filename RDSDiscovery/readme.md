@@ -4,7 +4,7 @@ RDS Discovery Tool is a lightweight ,it provides a capability to scan a fleet of
 automated checks for 20+features , validates supportability of the  enabled features on RDS, and generates a
 report which provides recommendation to migrate to RDS, RDS Custom or EC2 compatible. 
 
-:warning: Although this is a non invasive script , make sure you test and run in Dev before you run the scrip in Prod 
+:warning: Although this is a noninvasive script , make sure you test and run in Dev before you run the scrip in Prod 
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
@@ -27,15 +27,15 @@ https://calendly.com/rdstools/30min.
       
   "In" Directory will have 3 files "Serverstemplate" , AWSInstances.xlsx  and LimitationQueries.sql.
   
-   using the Server Template as a guide create a list of all our servers , you can use IP  or ServerName and if your port is not Default port 
-   enter the port as well  i.e. servername,1435 or xxx.xxx.xxx.xxx,1435.                                                                                                    Save the file in the "In" directory. once the server list has been created, you should be ready to run the tool .
-   LimitationQueries.sql is the Sql that is used in the Tool , you can take this SQl and run it locally on your server to get a feel of the script.
+   using the Server Template as a guide create a list of all your servers , you can use IP  or ServerName and if your port is not Default port 
+   enter the port as well  i.e. servername,1435 or xxx.xxx.xxx.xxx,1435.                                                                                                    Save the file in the "In" directory. once the server list has been created, you should be ready to run the tool.
+   LimitationQueries.sql is the Sql that is used in the Tool, you can take this SQl and run it locally on your server to get a feel of the script.
    
 
  ## Prerequisites
-  The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation.
+  The Script will only work on windows with PowerShell Script and Excel Sheet. The Excel sheet is needed for the rds recommendation.
   You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation.
-  Sqlserver Module needed to be importnaed and installed into your powershell.
+  Sqlserver Module needed to be imported and installed into your powershell.
   TCP port has to be opened to your Sql Server(s).
   ## Execution
   
@@ -65,14 +65,14 @@ https://calendly.com/rdstools/30min.
    **Or you can run the Bat file if you can't or you don't want to run exe .
    
   
-## Ouput 	  
+## Output 	  
     
 The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
 
 The excel sheet will be  placed in c:\RDSTools\out
 
 ## Troubleshooting
-If you receive error similar to te one below , that means the sqlserver PS module is not loaded into your system 
+If you receive error similar to the one below , that means the sqlserver PS module is not loaded into your system 
 ![image](https://user-images.githubusercontent.com/95581204/194915978-410cd417-9dec-4a83-a4c5-9030cd8942fd.png)
 To install the Powershell module for sql server ,first make sure you start powershell as admin .
 then run below command seperatley
