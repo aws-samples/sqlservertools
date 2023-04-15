@@ -1,10 +1,8 @@
 ## SQLServerAssessment Tool 
-This is a free lightweight tool that simplifies the assessment of your SQL Server workloads on premise to determine system utilization required for
-right sizing on Amazon RDS.
-The tool captures CPU, Memory, IOPS and Throughput utilization based on predefined timeframe and make RDS suggestion on how to right size on AWS.
-The tool can be run against a single or multiple MS SQL Server instances.
+SQLServerAssessment Tool is a lightweight, free tool that simplifies the assessment of your SQL Server workloads on premise to determine system utilization required for right sizing on Amazon RDS. The tool captures CPU, Memory, IOPS, and Throughput utilization based on a predefined timeframe and makes RDS suggestions on how to right size on AWS. This manual provides guidance on how to install, use, and troubleshoot the tool.
 
 ⚠️ Although this is a non-invasive script , make sure you test and run in Dev before you run the script in Prod 
+
 
 ##License
 This library is licensed under the MIT-0 License. See the LICENSE file.
@@ -14,21 +12,15 @@ For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot 
 https://calendly.com/rdstools/30min.
 
 ## Prerequisites
-The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation. You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation. Sqlserver Module needed to be importnaed and installed into your powershell. TCP port has to be opened to your Sql Server(s).
+The tool only works on Windows with PowerShell Script and Excel Sheet. The Excel sheet is needed for the RDS recommendation. You can still run the tool without the Excel Sheet; however, it will not generate the RDS instance recommendation. The Sqlserver Module needs to be imported and installed into your PowerShell. TCP port needs to be opened to your Sql Server(s).
 ## Installation
-1.Download the Tool on c:\ drive 
-
-2.extract the zip file on c:\RDSTools
-
-3.Once unzipped it should look like this:
-
+1. Download the tool to the C:\  drive.
+2. Extract the zip file to  C:\RDSTools.
+3. Once unzipped, it should look  like this:
     c:\RDSTools
-     
-    \c:\RDSTools\IN
-    
-    \c:\RDSTools\Out
-    
-    \c:\RDSTools\upload
+    c:\RDSTools\IN
+    c:\RDSTools\Out
+    c:\RDSTools\upload
      
 The Tool can run in automated mode or Manual :
 
@@ -61,16 +53,19 @@ for Windows authentication:
 
 Input Parameters:
 
-* auth    . S for Sql server , W for windows Authentication
-* login   . Sql server login ( if option is 'S')
-* password . Sql server password ( if option is 'S')
-* collectiontime . Collectiontime in minutes 
-* sqlserverendpoint='C:\RDSTools\out\RdsDiscovery.csv'  . Server list to be assessed by defualt the Tool will read the output from rdsdiscovery tool .
-* options  . 
+* auth    : S for Sql server , W for windows Authentication
+* login   : Sql server login ( if option is 'S')
+* password:  Sql server password ( if option is 'S')
+* collectiontime : Collectiontime in minutes 
+* sqlserverendpoint:'C:\RDSTools\out\RdsDiscovery.csv' . Server list to be assessed by defualt the Tool will read the output from rdsdiscovery tool .
+* options  : 
     * upload , for manual assessmnet upload ( more about this option , in the manual assessmnet section)
     * C  , cleanup
     * T , Terminate the assessment before the collectiontime end .
+    * 'dbmem' to generate Memory allocation per db . it sill be inb c:\rdstools\in 
+    * '95'   to generate RDS insance using  CPu 95 percentile metrics .
     
+   i.e  C:\RDSTools>SqlServerAssessment.bat -auth S -login sql -password password -options 'dbmem','95'
 The Tool will create a Sqlagent Job that will run every minutes to populate 5 tables created in msdb:
 
 * Sql_collectnioStatus: this table will have the collection job information, start time finish time and status.
