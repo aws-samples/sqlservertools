@@ -1,4 +1,4 @@
-# sqlservertools
+# SqlServerTools
 SQLServerTools is a repository dedicated to helping customers migrate their workload into AWS. The aim of this project is to ease the journey and make migrations easier through automation and tooling.
 
 This repository has two tools:
