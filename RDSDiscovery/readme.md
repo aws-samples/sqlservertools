@@ -1,10 +1,9 @@
 ## RDS Discovery Tool 
 
-RDS Discovery Tool is a lightweight ,it provides a capability to scan a fleet of on-prem SQl Servers  and does
-automated checks for 20+features , validates supportability of the  enabled features on RDS, and generates a
-report which provides recommendation to migrate to RDS, RDS Custom or EC2 compatible. 
+The RDS Discovery Tool is a lightweight tool that provides the capability to scan a fleet of on-prem SQL Servers and does automated checks for 20+ features. It validates supportability of the enabled features on RDS and generates a report which provides recommendations to migrate to RDS, RDS Custom, or EC2 compatible.
 
-:warning: Although this is a noninvasive script , make sure you test and run in Dev before you run the scrip in Prod 
+:warning: Although this is a non-invasive script, make sure you test and run it in Dev before you run the script in Prod.
+
 ## License
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
@@ -19,43 +18,46 @@ https://calendly.com/rdstools/30min.
 
 3.Once unzipped it should look like this:
 
-     c:\RDSTools
-     
-    \c:\RDSTools\IN
-    
-     \c:\RDSTools\Out
+     C:\RDSTools 
+     C:\RDSTools\IN 
+     C:\RDSTools\Out
+     C:\RDSTools\upload
+
       
-  "In" Directory will have 3 files "Serverstemplate" , AWSInstances.xlsx  and LimitationQueries.sql.
-  
-   using the Server Template as a guide create a list of all your servers , you can use IP  or ServerName and if your port is not Default port 
-   enter the port as well  i.e. servername,1435 or xxx.xxx.xxx.xxx,1435.                                                                                                    Save the file in the "In" directory. once the server list has been created, you should be ready to run the tool.
-   LimitationQueries.sql is the Sql that is used in the Tool, you can take this SQl and run it locally on your server to get a feel of the script.
+  The "In" directory will have 3 files - "Serverstemplate", AWSInstances.xlsx, and LimitationQueries.sql.
+
+Using the Server Template as a guide, create a list of all your servers. You can use IP or ServerName, and if your port is not Default port, enter the port as well, i.e. servername,1435 or xxx.xxx.xxx.xxx,1435. Save the file in the "In" directory. Once the server list has been created, you should be ready to run the tool.
+
+LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL and run it locally on your server to get a feel for the script.
+
    
 
  ## Prerequisites
-  The Script will only work on windows with PowerShell Script and Excel Sheet. The Excel sheet is needed for the rds recommendation.
-  You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation.
-  Sqlserver Module needed to be imported and installed into your powershell.
-  TCP port has to be opened to your Sql Server(s).
+ The script will only work on Windows with PowerShell Script and Excel Sheet. The Excel sheet is needed for the RDS recommendation. You can still run the tool without  Excel Sheet. It will just not generate the RDS instance recommendation. Sqlserver module needs to be imported and installed into your PowerShell. TCP port has to be opened to your SQL Server(s).
+ 
   ## Execution
   
-  The tool will run from cmd prompt in 2 different modes Windows or Sql server :
+  The tool will run from the CMD prompt in 2 different modes, Windows authentication mode or SQL server authentication mode:
 
    - **Windows Authentication** 	
-	by default the tool will read the sqlserverendoint from c:\RDSTools\in\servers.txt 
+	Use the W switch to enable Windows authentication mode. By default, the tool will read the SQL server endpoint from C:\RDSTools\IN\servers.txt.
 	
 	c:\RDSTools\Rdsdiscovery.bat -auth W 
 	
-	otherwise if your serverlist sits on another Direcory you can pass the  location as shown below 
+	otherwise if your serverlist sits on another Direcory you can pass the location as shown below 
 	
-      c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSTools\in\servers.txt
+        c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSTools\in\servers.txt
      
    - **Sql Server Authentication**
+   Use the S switch to enable SQL Server authentication mode and provide a valid SQL Server login and password as shown below:
    
-     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  
-           
-			   "Login"  should be member of the Admin Group.
- **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
+        c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  
+	c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  -sqlserverendpoint c:\RDSTools\in\servers.txt
+     
+          Note:
+	   The "Login" should be a member of the Admin Group. 
+	   
+ **By default, the tool will run and generate a report without RDS Recommendation. For recommendations, run the tool with -options RDS.**
  
    - **Windows Authentication** 	
 
@@ -68,7 +70,7 @@ https://calendly.com/rdstools/30min.
    For Help with Commands:
    
    C:\RDSTools\Rdsdiscovery.bat -options help
-   **Or you can run the Bat file if you can't or you don't want to run exe .
+   
    
   
 ## Output 	  
