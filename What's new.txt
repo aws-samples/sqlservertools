@@ -2,8 +2,8 @@ Bug Fixes and update
 4/17/2023 adding summary in HTML format for both Tools Rdsdiscovery and Sql Assessmnet .
 4/17/2023 Removed dependency on Excel Sheet.
 4/17/2023 adding dbmem option to sql assessment to Generate Db memory consumption 
-4/17/2023 fixed a bug in scaliing up for iops.
-4/17/2023 added a paramter for the "SA" login for servers that have the sa login renamed.
+4/17/2023 fixed a bug in scaling up for iops.
+4/17/2023 added a parameter for the "SA" login for servers that have the sa login renamed.
 4/17/2023 set a default collection time to 60 minutes.
 2/20/2023  The Tool will not error out on excel sheet if excel is not installed 
 2/20/2023   added the  iops and trhoughput as part of scaling up .
