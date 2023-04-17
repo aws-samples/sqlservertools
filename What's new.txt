@@ -1,4 +1,4 @@
-Bug Fixes.
+Bug Fixes and update
 4/17/2023 adding summary in HTML format for both Tools Rdsdiscovery and Sql Assessmnet .
 4/17/2023 Removed dependency on Excel Sheet.
 4/17/2023 adding dbmem option to sql assessment to Generate Db memory consumption 
