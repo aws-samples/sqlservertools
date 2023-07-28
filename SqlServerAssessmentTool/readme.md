@@ -105,10 +105,31 @@ The tool will make RDS recommendation based on current on prem architecture and 
  
 
 ## Cleanup
-To cleanup tables and Sql agent Job run the same command C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -options C . The tool will regenerate all the CSV files and the sqlserverassessmentouput and place them in c:\RDSTools\out and delete the Sql agent job and all tables from all Sql servers.
+To cleanup tables and Sql agent Job run command
+
+For Sql server authentication
+
+**C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -options C**  .
+
+For windows authentication
+
+**C:\RDSTools>SqlServerAssessment.bat -auth w -options C**  .
+
+The tool will regenerate all the CSV files and the sqlserverassessmentouput and place them in c:\RDSTools\out and delete the Sql agent job and all tables from all Sql servers.
+
 
 ## Terminate 
-To terminate the jobs before  collection is done  C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime -options T , Note that terminating the job will not cleanup  the tables and sql server agent job.
+To terminate the jobs before collection is done : 
+
+For Sql server authentication
+
+**C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password  -options T** 
+
+For windows authentication
+
+**C:\RDSTools>SqlServerAssessment.bat -auth w  -options T** 
+
+ Note that terminating the job will not cleanup the tables and the sql server agent job.
 
 ## Manual  Assessment 
 
