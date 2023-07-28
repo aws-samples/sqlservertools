@@ -37,9 +37,9 @@ For Sql server authentication:
 
  -- The assessment will run against c:\RDSTool\out\RdsDiscovery.CSV
  
- **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt** 
+ **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt** 
 
--- the assessment will run againt list of servers in  server.txt
+-- the assessment will run againt list of servers in  servers.txt
 
 for Windows authentication:
 
@@ -47,9 +47,9 @@ for Windows authentication:
 
  -- The assessment will run against c:\RDSTools\out\RdsDiscovery.CSV
  
-**C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\server.txt**
+**C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt**
 
--- the assessment will run against list of servers in  server.txt
+-- the assessment will run against list of servers in  servers.txt
 
 Input Parameters:
 
