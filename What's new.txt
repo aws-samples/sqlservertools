@@ -1,4 +1,5 @@
 Bug Fixes and update
+8/27/2023 Added a new Script "RDSReccomendation" that  works as a simulator for RDs instanse sizing , it takes CPU,Mem,IOPS,Throughput,MEMUtulization,CPUUtulzation
 8/27/2023 Fixed bugs realated to RDS recommendation when CPIu to Memory ratio is  larger than 8 (i.e 15 and 30)
 8/27/2023 Added Elasticache assessment  to the Rdsdiscover and Sql assessement.
 8/27/2023 added db level output report , that gived DB IOPS ,throughput,Memory usage,DB  Size,and latency 
