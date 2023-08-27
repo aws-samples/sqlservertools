@@ -1,4 +1,10 @@
 Bug Fixes and update
+8/27/2023 Fixed bugs realated to RDS recommendation when CPIu to Memory ratio is  larger than 8 (i.e 15 and 30)
+8/27/2023 Added Elasticache assessment  to the Rdsdiscover and Sql assessement.
+8/27/2023 added db level output report , that gived DB IOPS ,throughput,Memory usage,DB  Size,and latency 
+8/27/2023 adjusted the iops to EBS(AWs) optimized IOPS (64 K to 16 KB)
+8/27/2023 added a more detailed iops (Min,Max,Avg)
+8/27/2023 filtering out negative iops( negative iops are dude to server reboot)
 4/17/2023 adding summary in HTML format for both Tools Rdsdiscovery and Sql Assessmnet .
 4/17/2023 Removed dependency on Excel Sheet.
 4/17/2023 adding dbmem option to sql assessment to Generate Db memory consumption 
