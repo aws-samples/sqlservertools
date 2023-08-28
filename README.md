@@ -5,6 +5,7 @@
 _ invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The 
 certificate chain was issued by an authority that is not trusted.)
 _
+
 Until i make the fix  please reach out to bacrifai@amazon.com for workaround.
 
 # SqlServerTools
