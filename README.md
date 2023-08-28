@@ -1,4 +1,12 @@
-:warning: there was a recent update to Windwos/powershell that is causing the tool to fail ,  until i make the fix  please reach out to bacrifai@amazon.com for workaround.
+:warning: there was a recent update to Windwos/powershell that is causing the tool to fail:
+
+#Error 
+
+_ invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The 
+certificate chain was issued by an authority that is not trusted.)
+_
+Until i make the fix  please reach out to bacrifai@amazon.com for workaround.
+
 # SqlServerTools
 SQLServerTools is a repository dedicated to helping customers migrate their workload into AWS. The aim of this project is to ease the journey and make migrations easier through automation and tooling.
 
