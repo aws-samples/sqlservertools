@@ -12,5 +12,14 @@
     Once this is done you can verify that  sqlserver module has been successfuly by running blow  command 
 
     Get-Module -name sqlserver 
+2- Invoke-sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser
+   Try to run  the sript or the bat file as administrator 
+3-Error Error
+
+_ invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, 
+  error: 0 - The certificate chain was issued by an authority that is not trusted.) _
+
+ This error is  due to the new update for powershell where encryption is Mandatory by default. the fix to this is to add -encrypt optional to the invoke-sqlcmd command 
+ please reach out if you are getting this error.
 
 
