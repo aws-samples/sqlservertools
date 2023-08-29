@@ -1,5 +1,5 @@
 ## Troubleshooting
-1- Error "Invoke-sqlcmd' command was found in the module  'SQLPs', but the module could not be loaded ...
+1- Error ## "Invoke-sqlcmd' command was found in the module  'SQLPs', but the module could not be loaded ...
    it means  the sqlserver PS module is not loaded into your system
     To install the PowerShell module for SQl server, first make sure you start PowerShell as admin.
     then run below command separately
