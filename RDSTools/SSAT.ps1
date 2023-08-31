@@ -1,4 +1,4 @@
-﻿
+﻿ 
 Param (
   [Parameter()][string]$auth,
   [Parameter()][string]$login,
@@ -6,6 +6,7 @@ Param (
   [Parameter()]$collectiontime = 60,
   [Parameter()]$sqlserverendpoint = 'C:\RDSTools\out\RdsDiscovery.csv',
   [Parameter()]$sa = 'sa',
+  [Parameter()]$DBName = 'sample',
   [parameter()][array]$options,
   [parameter()][String] $Elasticache='N'
 )
@@ -126,10 +127,10 @@ Function Terminate_Job {
     [Parameter(Mandatory = $False)]$password
   )
   write-host "Terminate Collection Job for Server $dbServer"
-  $sql = "update msdb.dbo.SQL_CollectionStatus set jobstatus='Finished'  ,Current_Sample_ID=Max_Sample_ID"
+  $sql = "update $DBName.dbo.SQL_CollectionStatus set jobstatus='Finished'  ,Current_Sample_ID=Max_Sample_ID"
   if ( $auth -eq 'W')
-  { $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database msdb -query $sql }
-  else { $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database msdb -user $User -query $sql -password $password }
+  { $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database $DBName -query $sql }
+  else { $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database $DBName -user $User -query $sql -password $password }
 }#terminate Job
 function DB_level {
   Param(
@@ -162,19 +163,19 @@ $DBLEVELsql='dECLARE @total_buffer INT;
                      latency as
                     (
                     SELECT  DB_NAME(vfs.database_id) as dbname,
-                           SUM( CAST((io_stall_read_ms + io_stall_write_ms)/(1.0 + num_of_reads + num_of_writes) AS NUMERIC(10,1)) )AS [Average Total Latency]
+      UM( CAST((io_stall_read_ms + io_stall_write_ms)/(1.0 + num_of_reads + num_of_writes) AS NUMERIC(10,1)) )AS [Average Total Latency]
                     FROM    sys.dm_io_virtual_file_stats(NULL, NULL) AS vfs
                     where database_id>4 and database_id<32760
                     group by DB_NAME(vfs.database_id)
                     ),
                     IOPs as
                     (
-                    SELECT --top (select  count(distinct database_id) from [msdb].[dbo].[SQL_DBIO])
+                    SELECT --top (select  count(distinct database_id) from [$DBName].[dbo].[SQL_DBIO])
                     database_id,sample_id,isnull(sum(Totaliops)/60,0) as Max_IOPS,
                     isnull(((sum(bread+bwritten)/60)/1048576),0) as Max_Throughput
-                           FROM [msdb].[dbo].[SQL_DBIO]
+                           FROM [$DBName].[dbo].[SQL_DBIO]
 						    where Totaliops>0
-                                group by database_id,sample_id
+            roup by database_id,sample_id
                         --    order by Max_IOPS desc
                     )
 					
@@ -454,7 +455,7 @@ function Generate-recommendation {
             declare @cpuutilization int
             declare @one_or_zero int
         with  Cpu_util (one_or_zero) as
-                ( SELECT  case when sqlsercpUut>=80  then 1 else 0 end FROM [msdb].[dbo].[SQL_CPUCollection]
+                ( SELECT  case when sqlsercpUut>=80  then 1 else 0 end FROM [$DBName].[dbo].[SQL_CPUCollection]
                                 )
              select   @cpuutilization=count(*)*100/(select count(*)  from Cpu_util )  , @one_or_zero=one_or_zero from cpu_util where one_or_zero=1
                   group by one_or_zero
@@ -468,21 +469,21 @@ function Generate-recommendation {
       " # this what we use for scaling up or down.
   $cpuTUtilization = " declare @cpuutilization int
                    declare @one_or_zero int
-                   select @cpuutilization=sum([sqlsercpUut])/count(*) FROM [msdb].[dbo].[SQL_CPUCollection]
+                   select @cpuutilization=sum([sqlsercpUut])/count(*) FROM [$DBName].[dbo].[SQL_CPUCollection]
                         if  @cpuutilization>=80
                                 select 'Need To scale compute  UP'  as cpuRecomme,@cpuutilization  as 'Totalutilization'
                         else If @cpuutilization<80  and @cpuutilization >=30
                                 select 'compute Load is acceptable'  as cpuRecomme,@cpuutilization  as 'Totalutilization'
                         else   select 'compute can be scaled down ' as cpuRecomme ,@cpuutilization  as 'Totalutilization'" # this is is just an avg utilization.
   $cpu95percentile = 'declare @95Percentile int
-                    select @95Percentile=count(*)* 0.95 from [msdb].[dbo].[SQL_CPUCollection]
+                    select @95Percentile=count(*)* 0.95 from [$DBName].[dbo].[SQL_CPUCollection]
                     ;with cpupercentile as
                     (SELECT row_number () over (order by sqlsercpuUt asc) as rownum,
                                 [SqlSerCpuUT]
                               ,[SystemIdle]
                               ,[OtherProCpuUT]
                               ,[Collectiontime]
-                              FROM [msdb].[dbo].[SQL_CPUCollection]
+                              FROM [$DBName].[dbo].[SQL_CPUCollection]
                      ) select [SqlSerCpuUT] as Cpupercentile  from cpupercentile  where rownum =@95Percentile'
   $CpuSql = "SELECT cpu_count AS [Logical CPU Count],  hyperthread_ratio AS [Hyperthread Ratio],cpu_count/hyperthread_ratio AS [Physical CPU Count],virtual_machine_type_desc AS VM_type FROM sys.dm_os_sys_info WITH (NOLOCK) OPTION (RECOMPILE);"
     $MemSql = "SELECT  convert(int,value_in_use) as MaxMemory FROM sys.configurations WHERE name like 'max server memory%' "
@@ -491,10 +492,10 @@ function Generate-recommendation {
                 with Memory_intensive (one_or_zero) as
                     (
                     select ((case when ([SQLCurrMemUsageMB]*100)/[SQLMaxMemTargetMB]>=80   then 1 else 0 end)
-                             &(case when (([SQLCurrMemUsageMB]/1024)/4)*300< PLE then 0 else 1 end )) FROM [msdb].[dbo].[SQL_MemCollection]
+                             &(case when (([SQLCurrMemUsageMB]/1024)/4)*300< PLE then 0 else 1 end )) FROM [$DBName].[dbo].[SQL_MemCollection]
                     )
                              select @count=count(*) from Memory_intensive where one_or_zero=1 group by one_or_zero
-                             select @memutilization=isnull(@count*100/(select count(*) from [msdb].[dbo].[SQL_MemCollection]),0)
+                             select @memutilization=isnull(@count*100/(select count(*) from [$DBName].[dbo].[SQL_MemCollection]),0)
                         if  @MemUtilization>=80
                             select 'Need To scale Memory UP'  as MemRecomme,@MemUtilization  as utilization
                         else If @MemUtilization<80  and @MemUtilization >=50
@@ -504,18 +505,18 @@ function Generate-recommendation {
   $ThroughputIOPS = "With AVGIO (Totaliops,Throughput)
 	                    as 
 	                        ( SELECT  isnull(sum(Totaliops)/60,0) as totaliops,isnull(((sum(bread+bwritten)/60)/1048576),0) as [Throughput]
-                                FROM [msdb].[dbo].[SQL_DBIO]
+                                FROM [$DBName].[dbo].[SQL_DBIO]
                                   where Totaliops>0
 			                    group by sample_id
 					        ) 
 			        select  Maxiops.*,Miniops.*,AVGIOP.*
                             from (SELECT top 1 isnull(sum(Totaliops)/60,0)*4 as Max_IOPS,isnull(((sum(bread+bwritten)/60)/1048576),0) as Max_Throughput
-                                    FROM [msdb].[dbo].[SQL_DBIO]
+                                    FROM [$DBName].[dbo].[SQL_DBIO]
                                       where Totaliops>0
 			                        group by sample_id
 			                        order by Max_IOPS desc ) as Maxiops,
                                 (SELECT top 1 isnull(sum(Totaliops)/60,0)*4 as Min_IOPS,isnull(((sum(bread+bwritten)/60)/1048576),0) as Min_Throughput
-                                    FROM [msdb].[dbo].[SQL_DBIO]
+                                    FROM [$DBName].[dbo].[SQL_DBIO]
                                       where Totaliops>0
 			                        group by sample_id
 			                        order by Min_iops asc ) as Miniops,
@@ -601,7 +602,7 @@ function Generate-recommendation {
   {  $classonprem=$classonprem[0]}
   #call Elasticache Function
   if ($elasticache -eq 'Y')
-  {   $Elasticoutput = ElasticacheAssessment  $server 'MSDB' $user $password
+  {   $Elasticoutput = ElasticacheAssessment  $server '$DBName' $user $password
       $val = [pscustomobject]@{'Server Name' = $dbserver; 'Logical CPU Count' = $cpuonPrem; 'MaxMemorySettings GB' = $RamonPrem; 'Collection Time' = $collectiontime ;
       'CPU Recommendation' = $CPURecoResult.CpuRecomme; 'CPU Pressure Utilization(%)' = $CPURecoResult.utilization; 'CPu95Percentile' = $Cpupercentile; 'Total CPU Utilization(%)' = $cpuTUtilization; 'Mem Recommendation' = $MemRecoResult.MemRecomme;
       'Server Memory Utlization%' = $MemRecoResult.utilization;'MAX_Totaliops(AWS Optimized)' = $Totaliops; 'MAX_ThroughPut(MB)' = $throughput;'MIN_Totaliops(AWS Optimized)' = $ThroughputIOPS.MINIOPS; 'MIN_ThroughPut(MB)' = $ThroughputIOPS.MIN_Throughput;'AVG_Totaliops(AWS Optimized)' = $ThroughputIOPS.AVG_IOPS; 'AVG_ThroughPut(MB)' = $ThroughputIOPS.AVG_Throughput; 'SQl server edition' = $SQLVEresult.edition; 'Sql server version' = $SQLVEresult.productversion;
@@ -746,7 +747,7 @@ function Create-SQLtables {
                                            @notify_level_page=0,
                                             @delete_level=0,
                                            @category_name=N'[Uncategorized (Local)]',
-                                            @owner_login_name=$sa, @job_id = @jobId OUTPUT
+                                           @job_id = @jobId OUTPUT
                    IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
                       /****** Object:  Step [Check_Status]                                                                  ******/
                       EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Check_Status',
@@ -833,7 +834,7 @@ GO
                         select x.*,y.*,z.* from (SELECT       getdate() as collectionTime,(committed_kb/1024) as Commited,(committed_target_kb/1024)  as targetcommited FROM sys.dm_os_sys_info)  as x,
                            (   SELECT        (total_physical_memory_kb/1024) as totalMem,(available_physical_memory_kb/1024) as AvaiMem FROM sys.dm_os_sys_memory) as y,
                            (SELECT sum(cntr_value)/count(*)  as PLE FROM sys.dm_os_performance_counters WHERE counter_name = ''Page Life expectancy''    AND object_name LIKE ''%buffer node%'') as Z',
-                                            @database_name=N'msdb',
+                                            @database_name=N'$DBName',
                                             @flags=0
                      IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
                                  EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1
@@ -948,11 +949,11 @@ function Get-SQLTargetData {
                           ,[Throuput]
                           ,[Netpackets]
                           ,convert(varchar, CollectionTime, 121) as CollectionTime
-                      FROM [msdb].[dbo].[SQL_DBIO];
+                      FROM [$DBName].[dbo].[SQL_DBIO];
            "
   $cpusql = "SELECT cpu_count AS [Logical CPU Count],  hyperthread_ratio AS [Hyperthread Ratio],cpu_count/hyperthread_ratio AS [Physical CPU Count],virtual_machine_type_desc AS VM_type FROM sys.dm_os_sys_info WITH (NOLOCK) OPTION (RECOMPILE);"
-  $memcollectionsql = "SELECT * FROM [msdb].[dbo].[SQL_MemCollection]"
-  $cpucollectionsql = "SELECT *  FROM [msdb].[dbo].[SQL_CPUCollection]"
+  $memcollectionsql = "SELECT * FROM [$DBName].[dbo].[SQL_MemCollection]"
+  $cpucollectionsql = "SELECT *  FROM [$DBName].[dbo].[SQL_CPUCollection]"
   $ation = ''
   if ($auth -eq 'W') {
     $SQLTargetResponse = invoke-sqlcmd -serverInstance $dbserver -Database $DBName  -query $memcollectionsql
@@ -1125,40 +1126,40 @@ foreach ($server in $servers) {
     $status = ''
     $ation = ''
     if ($auth -eq 'W')
-    { $status = Get-SQLStatus -dbserver $server -DBName msdb }
-    else { $Status = Get-SQLStatus -dbserver $server -DBName msdb -user $login -password $password }
+    { $status = Get-SQLStatus -dbserver $server -DBName $DBName }
+    else { $Status = Get-SQLStatus -dbserver $server -DBName $DBName -user $login -password $password }
     if ($Status[0] -eq "S" -and $options -ne 'C') {
       write-host "Action: Start Collection for server $Server"
       if ($auth -eq 'W' )
-      { create-SQLtables -dbserver $server -DBName msdb -samples $collectiontime }
-      else { create-SQLtables -dbserver $server -DBName msdb -user $login -savepass $password -samples $collectiontime }
+      { create-SQLtables -dbserver $server -DBName $DBName -samples $collectiontime }
+      else { create-SQLtables -dbserver $server -DBName $DBName -user $login -savepass $password -samples $collectiontime }
       #write-host "The SQL collection process has started and will run for $collectiontime minutes. (Note: 1440 mins = 24 hours) Run this script again with -dbtype [t]arget to get the latest status, or to download the data when complete. Check the documentation to cancel, cleanup or run a collection with different parameters."
     }
     if ($status[0] -eq "F" -or $options -eq 'T') {
       if ($options -eq 'T')
-      { Terminate_job -dbserver $server -DBName msdb -user $login -password $password }
+      { Terminate_job -dbserver $server -DBName $DBName -user $login -password $password }
       write-host "Collection completed, getting data for Server $server"
       if ($auth -eq 'W' ) {
-        Get-SQLTargetData -dbserver $server -DBName msdb
-        Generate-recommendation -dbserver $server -DBName msdb  -collectiontime $collectiontime
+        Get-SQLTargetData -dbserver $server -DBName $DBName
+        Generate-recommendation -dbserver $server -DBName $DBName  -collectiontime $collectiontime
         if ($options -contains 'dblevel') { $dblevel = DB_level -dbserver $server -DBName master }
       }
       else {
-        Get-SQLTargetData -dbserver $server -DBName msdb -user $login -savepass $password
-        Generate-recommendation -dbserver $server -DBName msdb -user $login -savepass $password -collectiontime $collectiontime
+        Get-SQLTargetData -dbserver $server -DBName $DBName -user $login -savepass $password
+        Generate-recommendation -dbserver $server -DBName $DBName -user $login -savepass $password -collectiontime $collectiontime
         if ($options -contains 'dblevel') { $dblevel = DB_level -dbserver $server -DBName master -user $login -password $password }
       }
       if ( $options -eq 'C') {
         Write-host "Cleanup"
         if ($auth -eq 'W' )
-        { Cleanup-SQLObjects -dbserver $server -DBName msdb }
-        else { Cleanup-SQLObjects -dbserver $server -DBName msdb -user $login -savepass $password }
+        { Cleanup-SQLObjects -dbserver $server -DBName $DBName }
+        else { Cleanup-SQLObjects -dbserver $server -DBName $DBName -user $login -savepass $password }
       }
     }
     if ($status[0] -eq "R") {
       $minutesremaining = $status[1]
       if ($options -eq 'L')
-      { Generate-recommendation -dbserver $server -DBName msdb -user $login -savepass $password -collectiontime $collectiontime }
+      { Generate-recommendation -dbserver $server -DBName $DBName -user $login -savepass $password -collectiontime $collectiontime }
       write-host "Collection Still running $minutesremaining minutes remaining."
     }
   }
@@ -1170,4 +1171,4 @@ foreach ($server in $servers) {
 if ($status[0] -eq 'F') {
   Executive_summary $ArrayWithHeader
   TCO
-} 
+}  
