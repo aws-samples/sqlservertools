@@ -92,8 +92,10 @@ then run below command separately
 3-Import-Module sqlserver -DisableNameChecking;
 
 Once this is done and to verify sqlserver module has been successfuly loaded run below command
- ## Get-Module -name sqlserver 
+  Get-Module -name sqlserver 
  ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
+
+ 
 
 
 
