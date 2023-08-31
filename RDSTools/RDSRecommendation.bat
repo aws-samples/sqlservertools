@@ -21,9 +21,7 @@ shift
 SET arg10=%1
 SET arg11=%2
 SET arg12=%3
-SET arg13=%4
-SET arg14=%5
 
 echo %arg0%
-Powershell -ExecutionPolicy Bypass -file  C:.\SSAT.ps1 %arg1% %arg2% %arg3% %arg4% %arg5% %arg6% %arg7% %arg8% %arg9% %arg10% %arg11% %arg12%  
+Powershell -ExecutionPolicy Bypass -file  C:.\AWSRecommendation.ps1 %arg1% %arg2% %arg3% %arg4% %arg5% %arg6% %arg7% %arg8% %arg9% %arg10%  %arg11% %arg12%     
 

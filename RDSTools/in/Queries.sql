@@ -153,5 +153,33 @@ select  @isCLREnabled= case when (value_in_use=1 and @sqlbelow2016='Y') then 'N'
  
 -- Database count
 select @dbcount= case when count(*) > 100 then 'Y' else 'N' end  from sys.databases where database_id>4
- 
+--Elasticache Detailed report
+--Detailed elasticache report RDSDiscovery
+declare @totalWrite bigint
+declare @totalread int 
+declare @readoverwrite char(1)
+ ; WITH Read_WriteIO (execution_count,query_text,[Total Logical Reads (MB)],TotalLogicalRead,TotalPhysicalRead,total_logical_writes,total_grant_kb)
+as 
+(
+SELECT    qs.execution_count
+          , query_text = SUBSTRING( qt.text, qs.statement_start_offset / 2 + 1
+            , ( CASE
+                WHEN qs.statement_end_offset = -1 THEN LEN( CONVERT( nvarchar(MAX), qt.text )) * 2
+                ELSE qs.statement_end_offset
+                END - qs.statement_start_offset ) / 2 )
+          ,(qs.total_logical_reads)*8/1024.0 AS [Total Logical Reads (MB)],
+qs.total_logical_reads as [TotalLogicalRead],qs.total_physical_reads as TotalPhysicalRead,
+qs.total_logical_writes, qs.total_grant_kb  
+FROM        sys.dm_exec_query_stats               AS qs
+CROSS APPLY sys.dm_exec_sql_text( qs.sql_handle ) AS qt
+), 
+ReadOverWrite --( totalLogicalread,total_logical_writes, overallreadweight,readoverwriteweight)
+as
+(
+select  top 50 query_text, totalLogicalread,total_logical_writes,([Total Logical Reads (MB)]*100)/(SELECT sum([Total Logical Reads (MB)]) from Read_WriteIO  ) as overallreadweight 
+ ,((TotalLogicalRead*100)/nullif(totalLogicalread+total_logical_writes,0)) as readoverwriteweight --,
+ --sum(((TotalLogicalRead*100)/nullif(totalLogicalread+total_logical_writes,0)))
+ from Read_WriteIO order by overallreadweight desc
+ )
+ select * from ReadOverWrite 
  

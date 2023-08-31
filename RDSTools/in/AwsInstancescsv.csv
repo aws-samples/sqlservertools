@@ -1,496 +1,496 @@
-Instance Type,Version,Edition,VCPU,Memory,Bandwidth,IOPS,Throughput,Size,Class,RDSCustom,current,ratio
-db.m5.large    ,12,SE,2,8,4750,18750,594,large,m5,N,Y,4
-db.m5.large    ,13,SE,2,8,4750,18750,594,large,m5,N,Y,4
-db.m5.large    ,14,SE,2,8,4750,18750,594,large,m5,N,Y,4
-db.m5.large    ,15,SE,2,8,4750,18750,594,large,m5,Y,Y,4
-db.m5d.large   ,12,SE,2,8,4750,18750,594,large,m5d,N,Y,4
-db.m5d.large   ,13,SE,2,8,4750,18750,594,large,m5d,N,Y,4
-db.m5d.large   ,14,SE,2,8,4750,18750,594,large,m5d,N,Y,4
-db.m5d.large   ,15,SE,2,8,4750,18750,594,large,m5d,N,Y,4
-db.r5.large    ,12,SE,2,16,4750,18750,594,large,r5,N,Y,8
-db.r5.large    ,13,SE,2,16,4750,18750,594,large,r5,N,Y,8
-db.r5.large    ,14,SE,2,16,4750,18750,594,large,r5,N,Y,8
-db.r5.large    ,15,SE,2,16,4750,18750,594,large,r5,Y,Y,8
-db.r5b.large   ,12,SE,2,16,10000,43333,1250,large,r5b,N,Y,8
-db.r5b.large   ,13,SE,2,16,10000,43333,1250,large,r5b,N,Y,8
-db.r5b.large   ,14,SE,2,16,10000,43333,1250,large,r5b,N,Y,8
-db.r5b.large   ,15,SE,2,16,10000,43333,1250,large,r5b,N,Y,8
-db.r5d.large   ,12,SE,2,16,4750,18750,594,large,r5d,N,Y,8
-db.r5d.large   ,13,SE,2,16,4750,18750,594,large,r5d,N,Y,8
-db.r5d.large   ,14,SE,2,16,4750,18750,594,large,r5d,N,Y,8
-db.r5d.large   ,15,SE,2,16,4750,18750,594,large,r5d,N,Y,8
-db.z1d.large   ,13,SE,2,16,3170,13333,396,large,z1d,N,Y,8
-db.z1d.large   ,14,SE,2,16,3170,13333,396,large,z1d,N,Y,8
-db.z1d.large   ,15,SE,2,16,3170,13333,396,large,z1d,N,Y,8
-db.m5.xlarge   ,12,EE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,12,SE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,13,EE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,13,SE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,14,EE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,14,SE,4,16,4750,18750,594,xlarge,m5,N,Y,4
-db.m5.xlarge   ,15,EE,4,16,4750,18750,594,xlarge,m5,Y,Y,4
-db.m5.xlarge   ,15,SE,4,16,4750,18750,594,xlarge,m5,Y,Y,4
-db.m5d.xlarge  ,12,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,12,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,13,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,13,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,14,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,14,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,15,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m5d.xlarge  ,15,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4
-db.m6i.xlarge   ,12,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,12,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,13,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,13,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,14,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,14,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,15,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.m6i.xlarge   ,15,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4
-db.r5.xlarge   ,12,EE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,12,SE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,13,EE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,13,SE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,14,EE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,14,SE,4,32,4750,18750,594,xlarge,r5,N,Y,8
-db.r5.xlarge   ,15,EE,4,32,4750,18750,594,xlarge,r5,Y,Y,8
-db.r5.xlarge   ,15,SE,4,32,4750,18750,594,xlarge,r5,Y,Y,8
-db.r5b.xlarge  ,12,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,12,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,13,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,13,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,14,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,14,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,15,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5b.xlarge  ,15,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8
-db.r5d.xlarge  ,12,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,12,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,13,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,13,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,14,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,14,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,15,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r5d.xlarge  ,15,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8
-db.r6i.xlarge   ,12,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,12,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,13,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,13,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,14,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,14,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,15,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.r6i.xlarge   ,15,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8
-db.t3.xlarge   ,12,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,12,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,13,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,13,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,14,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,14,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,15,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.t3.xlarge   ,15,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4
-db.x1e.xlarge  ,12,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,12,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,13,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,13,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,14,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,14,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,15,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.x1e.xlarge  ,15,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30
-db.z1d.xlarge  ,13,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.z1d.xlarge  ,13,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.z1d.xlarge  ,14,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.z1d.xlarge  ,14,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.z1d.xlarge ,15,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.z1d.xlarge  ,15,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8
-db.m5.2xlarge  ,12,EE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,12,SE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,13,EE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,13,SE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,14,EE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,14,SE,8,32,4750,18750,594,2xlarge,m5,N,Y,4
-db.m5.2xlarge  ,15,EE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4
-db.m5.2xlarge  ,15,SE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4
-db.m5d.2xlarge ,12,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,12,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,13,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,13,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,14,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,14,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,15,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m5d.2xlarge ,15,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4
-db.m6i.2xlarge  ,12,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,12,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,13,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,13,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,14,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,14,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,15,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.m6i.2xlarge  ,15,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4
-db.r5.2xlarge  ,12,EE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,12,SE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,13,EE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,13,SE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,14,EE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,14,SE,8,64,4750,18750,594,2xlarge,r5,N,Y,8
-db.r5.2xlarge  ,15,EE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8
-db.r5.2xlarge  ,15,SE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8
-db.r5b.2xlarge ,12,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,12,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,13,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,13,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,14,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,14,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,15,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5b.2xlarge ,15,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8
-db.r5d.2xlarge ,12,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,12,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,13,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,13,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,14,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,14,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,15,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r5d.2xlarge ,15,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8
-db.r6i.2xlarge  ,12,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,12,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,13,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,13,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,14,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,14,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,15,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.r6i.2xlarge  ,15,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8
-db.t3.2xlarge  ,12,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,12,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,13,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,13,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,14,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,14,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,15,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.t3.2xlarge  ,15,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4
-db.x1e.2xlarge ,12,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,12,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,13,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,13,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,14,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,14,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,15,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.x1e.2xlarge ,15,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30
-db.z1d.2xlarge ,13,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.2xlarge ,13,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.2xlarge ,14,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.2xlarge ,14,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.2xlarge ,15,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.2xlarge ,15,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,13,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,13,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,14,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,14,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,15,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.z1d.3xlarge ,15,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8
-db.m5.4xlarge  ,12,EE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,12,SE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,13,EE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,13,SE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,14,EE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,14,SE,16,64,4750,18750,594,4xlarge,m5,N,Y,4
-db.m5.4xlarge  ,15,EE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4
-db.m5.4xlarge  ,15,SE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4
-db.m5d.4xlarge ,12,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,12,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,13,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,13,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,14,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,14,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,15,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m5d.4xlarge ,15,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4
-db.m6i.4xlarge  ,12,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,12,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,13,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,13,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,14,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,14,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,15,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.m6i.4xlarge  ,15,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4
-db.r5.4xlarge  ,12,EE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,12,SE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,13,EE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,13,SE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,14,EE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,14,SE,16,128,4750,18750,594,4xlarge,r5,N,Y,8
-db.r5.4xlarge  ,15,EE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8
-db.r5.4xlarge  ,15,SE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8
-db.r5b.4xlarge ,12,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,12,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,13,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,13,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,14,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,14,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,15,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5b.4xlarge ,15,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8
-db.r5d.4xlarge ,12,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,12,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,13,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,13,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,14,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,14,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,15,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r5d.4xlarge ,15,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8
-db.r6i.4xlarge  ,12,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,12,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,13,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,13,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,14,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,14,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,15,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.r6i.4xlarge  ,15,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8
-db.x1e.4xlarge ,12,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,12,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,13,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,13,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,14,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,14,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,15,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.x1e.4xlarge ,15,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30
-db.z1d.6xlarge ,13,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.z1d.6xlarge ,13,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.z1d.6xlarge ,14,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.z1d.6xlarge ,14,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.z1d.6xlarge ,15,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.z1d.6xlarge ,15,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8
-db.m5.8xlarge  ,12,EE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,12,SE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,13,EE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,13,SE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,14,EE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,14,SE,32,128,6800,30000,850,8xlarge,m5,N,Y,4
-db.m5.8xlarge  ,15,EE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4
-db.m5.8xlarge  ,15,SE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4
-db.m5d.8xlarge ,12,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,12,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,13,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,13,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,14,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,14,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,15,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m5d.8xlarge ,15,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4
-db.m6i.8xlarge  ,12,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,12,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,13,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,13,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,14,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,14,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,15,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.m6i.8xlarge  ,15,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4
-db.r5.8xlarge  ,12,EE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,12,SE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,13,EE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,13,SE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,14,EE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,14,SE,32,256,6800,30000,850,8xlarge,r5,N,Y,8
-db.r5.8xlarge  ,15,EE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8
-db.r5.8xlarge  ,15,SE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8
-db.r5b.8xlarge ,12,EE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,12,SE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,13,EE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,13,SE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,14,EE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,14,SE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,15,EE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5b.8xlarge ,15,SE,32,256,20000,86667,2500,8xlarge,r5b,N,Y,8
-db.r5d.8xlarge ,12,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,12,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,13,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,13,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,14,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,14,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,15,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r5d.8xlarge ,15,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8
-db.r6i.8xlarge  ,12,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,12,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,13,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,13,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,14,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,14,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,15,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.r6i.8xlarge  ,15,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8
-db.x1e.8xlarge ,12,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,12,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,13,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,13,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,14,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,14,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,15,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.x1e.8xlarge ,15,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30
-db.m5.12xlarge ,12,EE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,12,SE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,13,EE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,13,SE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,14,EE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,14,SE,48,192,9500,40000,1188,12xlarge,m5,N,Y,4
-db.m5.12xlarge ,15,EE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4
-db.m5.12xlarge ,15,SE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4
-db.m5d.12xlarge,12,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,12,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,13,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,13,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,14,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,14,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,15,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m5d.12xlarge,15,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4
-db.m6i.12xlarge ,12,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4
-db.m6i.12xlarge ,13,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4
-db.m6i.12xlarge ,14,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4
-db.m6i.12xlarge ,15,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4
-db.r5.12xlarge ,12,EE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,12,SE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,13,EE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,13,SE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,14,EE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,14,SE,48,384,9500,40000,1188,12xlarge,r5,N,Y,8
-db.r5.12xlarge ,15,EE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8
-db.r5.12xlarge ,15,SE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8
-db.r5b.12xlarge,12,EE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,12,SE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,13,EE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,13,SE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,14,EE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,14,SE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,15,EE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5b.12xlarge,15,SE,48,384,30000,130000,3750,12xlarge,r5b,N,Y,8
-db.r5d.12xlarge,12,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,12,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,13,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,13,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,14,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,14,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,15,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r5d.12xlarge,15,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8
-db.r6i.12xlarge ,12,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8
-db.r6i.12xlarge ,13,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8
-db.r6i.12xlarge ,14,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8
-db.r6i.12xlarge ,15,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8
-db.z1d.12xlarge,13,EE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.z1d.12xlarge,13,SE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.z1d.12xlarge,14,EE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.z1d.12xlarge,14,SE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.z1d.12xlarge,15,EE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.z1d.12xlarge,15,SE,48,384,19000,80000,2375,12xlarge,z1d,N,Y,8
-db.m5.16xlarge ,12,EE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,12,SE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,13,EE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,13,SE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,14,EE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,14,SE,64,256,13600,60000,1700,16xlarge,m5,N,Y,4
-db.m5.16xlarge ,15,EE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4
-db.m5.16xlarge ,15,SE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4
-db.m5d.16xlarge,12,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,12,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,13,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,13,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,14,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,14,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,15,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m5d.16xlarge,15,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4
-db.m6i.16xlarge ,12,EE,64,256,20000,80000,2500,16xlarge,m6i,N,Y,4
-db.m6i.16xlarge ,13,EE,64,256,20000,80000,2500,16xlarge,m6i,N,Y,4
-db.m6i.16xlarge ,14,EE,64,256,20000,80000,2500,16xlarge,m6i,N,Y,4
-db.m6i.16xlarge ,15,EE,64,256,20000,80000,2500,16xlarge,m6i,N,Y,4
-db.r5.16xlarge ,12,EE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,12,SE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,13,EE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,13,SE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,14,EE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,14,SE,64,512,13600,60000,1700,16xlarge,r5,N,Y,8
-db.r5.16xlarge ,15,EE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8
-db.r5.16xlarge ,15,SE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8
-db.r5b.16xlarge,12,EE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,12,SE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,13,EE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,13,SE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,14,EE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,14,SE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,15,EE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5b.16xlarge,15,SE,64,512,40000,173333,5000,16xlarge,r5b,N,Y,8
-db.r5d.16xlarge,12,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,12,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,13,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,13,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,14,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,14,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,15,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r5d.16xlarge,15,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8
-db.r6i.16xlarge ,12,EE,64,512,20000,80000,2500,16xlarge,r6i,N,Y,8
-db.r6i.16xlarge ,13,EE,64,512,20000,80000,2500,16xlarge,r6i,N,Y,8
-db.r6i.16xlarge ,14,EE,64,512,20000,80000,2500,16xlarge,r6i,N,Y,8
-db.r6i.16xlarge ,15,EE,64,512,20000,80000,2500,16xlarge,r6i,N,Y,8
-db.x1.16xlarge ,13,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15
-db.x1.16xlarge ,14,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15
-db.x1.16xlarge ,15,EE,64,976,7000,40000,875,16xlarge,x1,N,Y,15
-db.x1.16xlarge ,15,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15
-db.x1e.16xlarge,12,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30
-db.x1e.16xlarge,13,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30
-db.x1e.16xlarge,14,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30
-db.x1e.16xlarge,15,EE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30
-db.x1e.16xlarge,15,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30
-db.m5.24xlarge ,12,EE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,12,SE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,13,EE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,13,SE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,14,EE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,14,SE,96,384,19000,80000,2375,24xlarge,m5,N,Y,4
-db.m5.24xlarge ,15,EE,96,384,19000,80000,2375,24xlarge,m5,Y,Y,4
-db.m5.24xlarge ,15,SE,96,384,19000,80000,2375,24xlarge,m5,Y,Y,4
-db.m5d.24xlarge,12,EE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,12,SE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,13,EE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,13,SE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,14,EE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,14,SE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,15,EE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m5d.24xlarge,15,SE,96,384,19000,80000,2375,24xlarge,m5d,N,Y,4
-db.m6i.24xlarge ,12,EE,96,384,30000,120000,3750,24xlarge,m6i,N,Y,4
-db.m6i.24xlarge ,13,EE,96,384,30000,120000,3750,24xlarge,m6i,N,Y,4
-db.m6i.24xlarge ,14,EE,96,384,30000,120000,3750,24xlarge,m6i,N,Y,4
-db.m6i.24xlarge ,15,EE,96,384,30000,120000,3750,24xlarge,m6i,N,Y,4
-db.r5.24xlarge ,12,EE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,12,SE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,13,EE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,13,SE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,14,EE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,14,SE,96,768,19000,80000,2375,24xlarge,r5,N,Y,8
-db.r5.24xlarge ,15,EE,96,768,19000,80000,2375,24xlarge,r5,Y,Y,8
-db.r5.24xlarge ,15,SE,96,768,19000,80000,2375,24xlarge,r5,Y,Y,8
-db.r5b.24xlarge,12,EE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,12,SE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,13,EE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,13,SE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,14,EE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,14,SE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,15,EE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5b.24xlarge,15,SE,96,768,60000,260000,7500,24xlarge,r5b,N,Y,8
-db.r5d.24xlarge,12,EE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,12,SE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,13,EE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,13,SE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,14,EE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,14,SE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,15,EE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r5d.24xlarge,15,SE,96,768,19000,80000,2375,24xlarge,r5d,N,Y,8
-db.r6i.24xlarge ,12,EE,96,768,30000,120000,3750,24xlarge,r6i,N,Y,8
-db.r6i.24xlarge ,13,EE,96,768,30000,120000,3750,24xlarge,r6i,N,Y,8
-db.r6i.24xlarge ,14,EE,96,768,30000,120000,3750,24xlarge,r6i,N,Y,8
-db.r6i.24xlarge ,15,EE,96,768,30000,120000,3750,24xlarge,r6i,N,Y,8
-db.m6i.32xlarge ,12,EE,128,512,40000,160000,5000,32xlarge,m6i,N,Y,4
-db.m6i.32xlarge ,13,EE,128,512,40000,160000,5000,32xlarge,m6i,N,Y,4
-db.m6i.32xlarge ,14,EE,128,512,40000,160000,5000,32xlarge,m6i,N,Y,4
-db.m6i.32xlarge ,15,EE,128,512,40000,160000,5000,32xlarge,m6i,N,Y,4
-db.r6i.32xlarge ,12,EE,128,1024,40000,160000,5000,32xlarge,r6i,N,Y,8
-db.r6i.32xlarge ,13,EE,128,1024,40000,160000,5000,32xlarge,r6i,N,Y,8
-db.r6i.32xlarge ,14,EE,128,1024,40000,160000,5000,32xlarge,r6i,N,Y,8
-db.r6i.32xlarge ,15,EE,128,1024,40000,160000,5000,32xlarge,r6i,N,Y,8
-db.x1.32xlarge ,13,SE,128,1952,14000,80000,1750,32xlarge,x1,N,Y,15
-db.x1.32xlarge ,14,SE,128,1952,14000,80000,1750,32xlarge,x1,N,Y,15
-db.x1.32xlarge ,15,EE,128,1952,14000,80000,1750,32xlarge,x1,N,Y,15
-db.x1.32xlarge ,15,SE,128,1952,14000,80000,1750,32xlarge,x1,N,Y,15
-db.x1e.32xlarge,12,SE,128,3904,14000,80000,1750,32xlarge,x1e,N,Y,30
-db.x1e.32xlarge,13,SE,128,3904,14000,80000,1750,32xlarge,x1e,N,Y,30
-db.x1e.32xlarge,14,SE,128,3904,14000,80000,1750,32xlarge,x1e,N,Y,30
-db.x1e.32xlarge,15,EE,128,3904,14000,80000,1750,32xlarge,x1e,N,Y,30
-db.x1e.32xlarge,15,SE,128,3904,14000,80000,1750,32xlarge,x1e,N,Y,30
+Instance Type,Version,Edition,VCPU,Memory,Bandwidth,IOPS,Throughput,Size,Class,RDSCustom,current,ratio,instanceType
+db.m5.large    ,12,SE,2,8,4750,18750,594,large,m5,Y,Y,4,G
+db.m5.large    ,13,SE,2,8,4750,18750,594,large,m5,Y,Y,4,G
+db.m5.large    ,14,SE,2,8,4750,18750,594,large,m5,Y,Y,4,G
+db.m5.large    ,15,SE,2,8,4750,18750,594,large,m5,Y,Y,4,G
+db.m5d.large   ,12,SE,2,8,4750,18750,594,large,m5d,N,Y,4,G
+db.m5d.large   ,13,SE,2,8,4750,18750,594,large,m5d,N,Y,4,G
+db.m5d.large   ,14,SE,2,8,4750,18750,594,large,m5d,N,Y,4,G
+db.m5d.large   ,15,SE,2,8,4750,18750,594,large,m5d,N,Y,4,G
+db.r5.large    ,12,SE,2,16,4750,18750,594,large,r5,Y,Y,8,M
+db.r5.large    ,13,SE,2,16,4750,18750,594,large,r5,Y,Y,8,M
+db.r5.large    ,14,SE,2,16,4750,18750,594,large,r5,Y,Y,8,M
+db.r5.large    ,15,SE,2,16,4750,18750,594,large,r5,Y,Y,8,M
+db.r5b.large   ,12,SE,2,16,10000,43333,1250,large,r5b,N,Y,8,M
+db.r5b.large   ,13,SE,2,16,10000,43333,1250,large,r5b,N,Y,8,M
+db.r5b.large   ,14,SE,2,16,10000,43333,1250,large,r5b,N,Y,8,M
+db.r5b.large   ,15,SE,2,16,10000,43333,1250,large,r5b,N,Y,8,M
+db.r5d.large   ,12,SE,2,16,4750,18750,594,large,r5d,N,Y,8,M
+db.r5d.large   ,13,SE,2,16,4750,18750,594,large,r5d,N,Y,8,M
+db.r5d.large   ,14,SE,2,16,4750,18750,594,large,r5d,N,Y,8,M
+db.r5d.large   ,15,SE,2,16,4750,18750,594,large,r5d,N,Y,8,M
+db.z1d.large   ,13,SE,2,16,3170,13333,396,large,z1d,N,Y,8,M
+db.z1d.large   ,14,SE,2,16,3170,13333,396,large,z1d,N,Y,8,M
+db.z1d.large   ,15,SE,2,16,3170,13333,396,large,z1d,N,Y,8,M
+db.m5.xlarge   ,12,EE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,12,SE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,13,EE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,13,SE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,14,EE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,14,SE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,15,EE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5.xlarge   ,15,SE,4,16,4750,18750,594,xlarge,m5,Y,Y,4,G
+db.m5d.xlarge  ,12,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,12,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,13,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,13,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,14,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,14,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,15,EE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m5d.xlarge  ,15,SE,4,16,4750,18750,594,xlarge,m5d,N,Y,4,G
+db.m6i.xlarge   ,12,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,12,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,13,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,13,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,14,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,14,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,15,EE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.m6i.xlarge   ,15,SE,4,16,10000,40000,1250,xlarge,m6i,N,Y,4,G
+db.r5.xlarge   ,12,EE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,12,SE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,13,EE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,13,SE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,14,EE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,14,SE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,15,EE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5.xlarge   ,15,SE,4,32,4750,18750,594,xlarge,r5,Y,Y,8,M
+db.r5b.xlarge  ,12,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,12,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,13,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,13,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,14,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,14,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,15,EE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5b.xlarge  ,15,SE,4,32,10000,43333,1250,xlarge,r5b,N,Y,8,M
+db.r5d.xlarge  ,12,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,12,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,13,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,13,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,14,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,14,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,15,EE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r5d.xlarge  ,15,SE,4,32,4750,18750,594,xlarge,r5d,N,Y,8,M
+db.r6i.xlarge   ,12,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,12,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,13,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,13,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,14,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,14,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,15,EE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.r6i.xlarge   ,15,SE,4,32,10000,40000,1250,xlarge,r6i,N,Y,8,M
+db.t3.xlarge   ,12,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,12,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,13,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,13,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,14,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,14,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,15,EE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.t3.xlarge   ,15,SE,4,16,2780,15700,348,xlarge,t3,N,Y,4,G
+db.x1e.xlarge  ,12,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,12,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,13,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,13,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,14,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,14,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,15,EE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.x1e.xlarge  ,15,SE,4,122,500,3700,62,xlarge,x1e,N,Y,30,M
+db.z1d.xlarge  ,13,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.z1d.xlarge  ,13,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.z1d.xlarge  ,14,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.z1d.xlarge  ,14,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.z1d.xlarge ,15,EE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.z1d.xlarge  ,15,SE,4,32,3170,13333,396,xlarge,z1d,N,Y,8,M
+db.m5.2xlarge  ,12,EE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,12,SE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,13,EE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,13,SE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,14,EE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,14,SE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,15,EE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5.2xlarge  ,15,SE,8,32,4750,18750,594,2xlarge,m5,Y,Y,4,G
+db.m5d.2xlarge ,12,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,12,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,13,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,13,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,14,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,14,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,15,EE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m5d.2xlarge ,15,SE,8,32,4750,18750,594,2xlarge,m5d,N,Y,4,G
+db.m6i.2xlarge  ,12,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,12,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,13,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,13,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,14,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,14,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,15,EE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.m6i.2xlarge  ,15,SE,8,32,10000,40000,1250,2xlarge,m6i,N,Y,4,G
+db.r5.2xlarge  ,12,EE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,12,SE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,13,EE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,13,SE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,14,EE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,14,SE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,15,EE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5.2xlarge  ,15,SE,8,64,4750,18750,594,2xlarge,r5,Y,Y,8,M
+db.r5b.2xlarge ,12,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,12,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,13,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,13,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,14,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,14,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,15,EE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5b.2xlarge ,15,SE,8,64,10000,43333,1250,2xlarge,r5b,N,Y,8,M
+db.r5d.2xlarge ,12,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,12,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,13,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,13,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,14,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,14,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,15,EE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r5d.2xlarge ,15,SE,8,64,4750,18750,594,2xlarge,r5d,N,Y,8,M
+db.r6i.2xlarge  ,12,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,12,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,13,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,13,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,14,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,14,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,15,EE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.r6i.2xlarge  ,15,SE,8,64,10000,40000,1250,2xlarge,r6i,N,Y,8,M
+db.t3.2xlarge  ,12,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,12,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,13,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,13,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,14,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,14,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,15,EE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.t3.2xlarge  ,15,SE,8,32,2780,15700,348,2xlarge,t3,N,Y,4,G
+db.x1e.2xlarge ,12,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,12,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,13,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,13,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,14,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,14,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,15,EE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.x1e.2xlarge ,15,SE,8,244,1000,7400,125,2xlarge,x1e,N,Y,30,M
+db.z1d.2xlarge ,13,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.2xlarge ,13,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.2xlarge ,14,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.2xlarge ,14,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.2xlarge ,15,EE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.2xlarge ,15,SE,8,64,3170,13333,396,2xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,13,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,13,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,14,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,14,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,15,EE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.z1d.3xlarge ,15,SE,12,96,4750,20000,594,3xlarge,z1d,N,Y,8,M
+db.m5.4xlarge  ,12,EE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,12,SE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,13,EE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,13,SE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,14,EE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,14,SE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,15,EE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5.4xlarge  ,15,SE,16,64,4750,18750,594,4xlarge,m5,Y,Y,4,G
+db.m5d.4xlarge ,12,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,12,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,13,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,13,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,14,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,14,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,15,EE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m5d.4xlarge ,15,SE,16,64,4750,18750,594,4xlarge,m5d,N,Y,4,G
+db.m6i.4xlarge  ,12,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,12,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,13,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,13,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,14,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,14,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,15,EE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.m6i.4xlarge  ,15,SE,16,64,10000,40000,1250,4xlarge,m6i,N,Y,4,G
+db.r5.4xlarge  ,12,EE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,12,SE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,13,EE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,13,SE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,14,EE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,14,SE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,15,EE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5.4xlarge  ,15,SE,16,128,4750,18750,594,4xlarge,r5,Y,Y,8,M
+db.r5b.4xlarge ,12,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,12,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,13,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,13,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,14,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,14,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,15,EE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5b.4xlarge ,15,SE,16,128,10000,43333,1250,4xlarge,r5b,N,Y,8,M
+db.r5d.4xlarge ,12,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,12,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,13,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,13,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,14,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,14,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,15,EE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r5d.4xlarge ,15,SE,16,128,4750,18750,594,4xlarge,r5d,N,Y,8,M
+db.r6i.4xlarge  ,12,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,12,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,13,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,13,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,14,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,14,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,15,EE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.r6i.4xlarge  ,15,SE,16,128,10000,40000,1250,4xlarge,r6i,N,Y,8,M
+db.x1e.4xlarge ,12,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,12,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,13,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,13,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,14,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,14,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,15,EE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.x1e.4xlarge ,15,SE,16,488,1750,10000,219,4xlarge,x1e,N,Y,30,M
+db.z1d.6xlarge ,13,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.z1d.6xlarge ,13,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.z1d.6xlarge ,14,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.z1d.6xlarge ,14,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.z1d.6xlarge ,15,EE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.z1d.6xlarge ,15,SE,24,192,9500,40000,1188,6xlarge,z1d,N,Y,8,M
+db.m5.8xlarge  ,12,EE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,12,SE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,13,EE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,13,SE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,14,EE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,14,SE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,15,EE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5.8xlarge  ,15,SE,32,128,6800,30000,850,8xlarge,m5,Y,Y,4,G
+db.m5d.8xlarge ,12,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,12,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,13,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,13,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,14,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,14,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,15,EE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m5d.8xlarge ,15,SE,32,128,6800,30000,850,8xlarge,m5d,N,Y,4,G
+db.m6i.8xlarge  ,12,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,12,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,13,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,13,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,14,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,14,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,15,EE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.m6i.8xlarge  ,15,SE,32,128,10000,40000,1250,8xlarge,m6i,N,Y,4,G
+db.r5.8xlarge  ,12,EE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,12,SE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,13,EE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,13,SE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,14,EE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,14,SE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,15,EE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5.8xlarge  ,15,SE,32,256,6800,30000,850,8xlarge,r5,Y,Y,8,M
+db.r5b.8xlarge ,12,EE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,12,SE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,13,EE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,13,SE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,14,EE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,14,SE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,15,EE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5b.8xlarge ,15,SE,32,256,20000,65000,2500,8xlarge,r5b,N,Y,8,M
+db.r5d.8xlarge ,12,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,12,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,13,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,13,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,14,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,14,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,15,EE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r5d.8xlarge ,15,SE,32,256,6800,30000,850,8xlarge,r5d,N,Y,8,M
+db.r6i.8xlarge  ,12,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,12,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,13,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,13,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,14,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,14,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,15,EE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.r6i.8xlarge  ,15,SE,32,256,10000,40000,1250,8xlarge,r6i,N,Y,8,M
+db.x1e.8xlarge ,12,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,12,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,13,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,13,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,14,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,14,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,15,EE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.x1e.8xlarge ,15,SE,32,976,3500,20000,438,8xlarge,x1e,N,Y,30,M
+db.m5.12xlarge ,12,EE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,12,SE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,13,EE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,13,SE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,14,EE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,14,SE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,15,EE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5.12xlarge ,15,SE,48,192,9500,40000,1188,12xlarge,m5,Y,Y,4,G
+db.m5d.12xlarge,12,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,12,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,13,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,13,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,14,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,14,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,15,EE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m5d.12xlarge,15,SE,48,192,9500,40000,1188,12xlarge,m5d,N,Y,4,G
+db.m6i.12xlarge ,12,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4,G
+db.m6i.12xlarge ,13,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4,G
+db.m6i.12xlarge ,14,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4,G
+db.m6i.12xlarge ,15,EE,48,192,15000,60000,1875,12xlarge,m6i,N,Y,4,G
+db.r5.12xlarge ,12,EE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,12,SE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,13,EE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,13,SE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,14,EE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,14,SE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,15,EE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5.12xlarge ,15,SE,48,384,9500,40000,1188,12xlarge,r5,Y,Y,8,M
+db.r5b.12xlarge,12,EE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,12,SE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,13,EE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,13,SE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,14,EE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,14,SE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,15,EE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5b.12xlarge,15,SE,48,384,30000,65000,3750,12xlarge,r5b,N,Y,8,M
+db.r5d.12xlarge,12,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,12,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,13,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,13,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,14,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,14,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,15,EE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r5d.12xlarge,15,SE,48,384,9500,40000,1188,12xlarge,r5d,N,Y,8,M
+db.r6i.12xlarge ,12,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8,M
+db.r6i.12xlarge ,13,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8,M
+db.r6i.12xlarge ,14,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8,M
+db.r6i.12xlarge ,15,EE,48,384,15000,60000,1875,12xlarge,r6i,N,Y,8,M
+db.z1d.12xlarge,13,EE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.z1d.12xlarge,13,SE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.z1d.12xlarge,14,EE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.z1d.12xlarge,14,SE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.z1d.12xlarge,15,EE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.z1d.12xlarge,15,SE,48,384,19000,65000,2375,12xlarge,z1d,N,Y,8,M
+db.m5.16xlarge ,12,EE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,12,SE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,13,EE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,13,SE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,14,EE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,14,SE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,15,EE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5.16xlarge ,15,SE,64,256,13600,60000,1700,16xlarge,m5,Y,Y,4,G
+db.m5d.16xlarge,12,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,12,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,13,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,13,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,14,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,14,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,15,EE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m5d.16xlarge,15,SE,64,256,13600,60000,1700,16xlarge,m5d,N,Y,4,G
+db.m6i.16xlarge ,12,EE,64,256,20000,65000,2500,16xlarge,m6i,N,Y,4,G
+db.m6i.16xlarge ,13,EE,64,256,20000,65000,2500,16xlarge,m6i,N,Y,4,G
+db.m6i.16xlarge ,14,EE,64,256,20000,65000,2500,16xlarge,m6i,N,Y,4,G
+db.m6i.16xlarge ,15,EE,64,256,20000,65000,2500,16xlarge,m6i,N,Y,4,G
+db.r5.16xlarge ,12,EE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,12,SE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,13,EE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,13,SE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,14,EE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,14,SE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,15,EE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5.16xlarge ,15,SE,64,512,13600,60000,1700,16xlarge,r5,Y,Y,8,M
+db.r5b.16xlarge,12,EE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,12,SE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,13,EE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,13,SE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,14,EE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,14,SE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,15,EE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5b.16xlarge,15,SE,64,512,40000,65000,5000,16xlarge,r5b,N,Y,8,M
+db.r5d.16xlarge,12,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,12,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,13,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,13,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,14,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,14,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,15,EE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r5d.16xlarge,15,SE,64,512,13600,60000,1700,16xlarge,r5d,N,Y,8,M
+db.r6i.16xlarge ,12,EE,64,512,20000,65000,2500,16xlarge,r6i,N,Y,8,M
+db.r6i.16xlarge ,13,EE,64,512,20000,65000,2500,16xlarge,r6i,N,Y,8,M
+db.r6i.16xlarge ,14,EE,64,512,20000,65000,2500,16xlarge,r6i,N,Y,8,M
+db.r6i.16xlarge ,15,EE,64,512,20000,65000,2500,16xlarge,r6i,N,Y,8,M
+db.x1.16xlarge ,13,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15,M
+db.x1.16xlarge ,14,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15,M
+db.x1.16xlarge ,15,EE,64,976,7000,40000,875,16xlarge,x1,N,Y,15,M
+db.x1.16xlarge ,15,SE,64,976,7000,40000,875,16xlarge,x1,N,Y,15,M
+db.x1e.16xlarge,12,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30,M
+db.x1e.16xlarge,13,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30,M
+db.x1e.16xlarge,14,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30,M
+db.x1e.16xlarge,15,EE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30,M
+db.x1e.16xlarge,15,SE,64,1952,7000,40000,875,16xlarge,x1e,N,Y,30,M
+db.m5.24xlarge ,12,EE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,12,SE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,13,EE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,13,SE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,14,EE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,14,SE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,15,EE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5.24xlarge ,15,SE,96,384,19000,65000,2375,24xlarge,m5,Y,Y,4,G
+db.m5d.24xlarge,12,EE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,12,SE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,13,EE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,13,SE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,14,EE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,14,SE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,15,EE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m5d.24xlarge,15,SE,96,384,19000,65000,2375,24xlarge,m5d,N,Y,4,G
+db.m6i.24xlarge ,12,EE,96,384,30000,65000,3750,24xlarge,m6i,N,Y,4,G
+db.m6i.24xlarge ,13,EE,96,384,30000,65000,3750,24xlarge,m6i,N,Y,4,G
+db.m6i.24xlarge ,14,EE,96,384,30000,65000,3750,24xlarge,m6i,N,Y,4,G
+db.m6i.24xlarge ,15,EE,96,384,30000,65000,3750,24xlarge,m6i,N,Y,4,G
+db.r5.24xlarge ,12,EE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,12,SE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,13,EE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,13,SE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,14,EE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,14,SE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,15,EE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5.24xlarge ,15,SE,96,768,19000,65000,2375,24xlarge,r5,Y,Y,8,M
+db.r5b.24xlarge,12,EE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,12,SE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,13,EE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,13,SE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,14,EE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,14,SE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,15,EE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5b.24xlarge,15,SE,96,768,60000,65000,7500,24xlarge,r5b,N,Y,8,M
+db.r5d.24xlarge,12,EE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,12,SE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,13,EE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,13,SE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,14,EE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,14,SE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,15,EE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r5d.24xlarge,15,SE,96,768,19000,65000,2375,24xlarge,r5d,N,Y,8,M
+db.r6i.24xlarge ,12,EE,96,768,30000,65000,3750,24xlarge,r6i,N,Y,8,M
+db.r6i.24xlarge ,13,EE,96,768,30000,65000,3750,24xlarge,r6i,N,Y,8,M
+db.r6i.24xlarge ,14,EE,96,768,30000,65000,3750,24xlarge,r6i,N,Y,8,M
+db.r6i.24xlarge ,15,EE,96,768,30000,65000,3750,24xlarge,r6i,N,Y,8,M
+db.m6i.32xlarge ,12,EE,128,512,40000,65000,5000,32xlarge,m6i,N,Y,4,G
+db.m6i.32xlarge ,13,EE,128,512,40000,65000,5000,32xlarge,m6i,N,Y,4,G
+db.m6i.32xlarge ,14,EE,128,512,40000,65000,5000,32xlarge,m6i,N,Y,4,G
+db.m6i.32xlarge ,15,EE,128,512,40000,65000,5000,32xlarge,m6i,N,Y,4,G
+db.r6i.32xlarge ,12,EE,128,1024,40000,65000,5000,32xlarge,r6i,N,Y,8,M
+db.r6i.32xlarge ,13,EE,128,1024,40000,65000,5000,32xlarge,r6i,N,Y,8,M
+db.r6i.32xlarge ,14,EE,128,1024,40000,65000,5000,32xlarge,r6i,N,Y,8,M
+db.r6i.32xlarge ,15,EE,128,1024,40000,65000,5000,32xlarge,r6i,N,Y,8,M
+db.x1.32xlarge ,13,SE,128,1952,14000,65000,1750,32xlarge,x1,N,Y,15,M
+db.x1.32xlarge ,14,SE,128,1952,14000,65000,1750,32xlarge,x1,N,Y,15,M
+db.x1.32xlarge ,15,EE,128,1952,14000,65000,1750,32xlarge,x1,N,Y,15,M
+db.x1.32xlarge ,15,SE,128,1952,14000,65000,1750,32xlarge,x1,N,Y,15,M
+db.x1e.32xlarge,12,SE,128,3904,14000,65000,1750,32xlarge,x1e,N,Y,30,M
+db.x1e.32xlarge,13,SE,128,3904,14000,65000,1750,32xlarge,x1e,N,Y,30,M
+db.x1e.32xlarge,14,SE,128,3904,14000,65000,1750,32xlarge,x1e,N,Y,30,M
+db.x1e.32xlarge,15,EE,128,3904,14000,65000,1750,32xlarge,x1e,N,Y,30,M
+db.x1e.32xlarge,15,SE,128,3904,14000,65000,1750,32xlarge,x1e,N,Y,30,M

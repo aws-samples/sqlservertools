@@ -158,17 +158,17 @@ while (Select Max_Sample_ID - Current_Sample_ID  from #SQL_CollectionStatus) >  
                            (SELECT sum(cntr_value)/count(*)  as PLE FROM sys.dm_os_performance_counters WHERE counter_name = 'Page Life expectancy'    AND object_name LIKE '%buffer node%') as Z
 waitfor delay '00:00:59'
 end
-          declare @cpuutilization int
+          declare @cpuutilization bigint
           declare @one_or_zero int
           declare @cpurecomm varchar(50)
           declare @Memrecomm Varchar(50)
-          declare @memutilization int
-          declare @Cpupercentile int
-          declare @MaxMemory int 
-          declare @Throughput int
-          declare @totaliops int
+          declare @memutilization bigint
+          declare @Cpupercentile bigint
+          declare @MaxMemory bigint 
+          declare @Throughput bigint
+          declare @totaliops bigint
           declare @edition varchar(2)
-          declare @ProductVersion int
+          declare @ProductVersion bigint
              declare @servername  varchar(100)
              select  @servername=@@servername
 
@@ -223,8 +223,31 @@ declare @count int
                         else If @MemUtilization<80  and @MemUtilization >=50 
                             select @Memrecomm='Memory Load is acceptable'  --,@MemUtilization  as utilization
                         else   select @Memrecomm='Memory can be scaled down '  --,@MemUtilization  as utilization
-SELECT @totaliops=isnull(sum(Totaliops)/60,0) ,@Throughput=isnull(((sum(bread+bwritten)/60)/1048576),0)
+
+;With AVGIO (Totaliops,Throughput)
+	as 
+	(
+	SELECT  isnull(sum(Totaliops)/60,0) as totaliops,isnull(((sum(bread+bwritten)/60)/1048576),0) as [Throughput]
               FROM #SQL_DBIO
+			  group by sample_id
+					  ) 
+			  --select avg(Totaliops),Avg(throughput) from AVGIO
+select  @totaliops=Maxiops.Max_iops,@Throughput=Maxiops.Max_throughput--, Miniops.*,AVGIOP.*
+from (SELECT top 1 isnull(sum(Totaliops)/60,0)*4 as Max_IOPS,isnull(((sum(bread+bwritten)/60)/1048576),0) as Max_Throughput
+              FROM #SQL_DBIO
+			  group by sample_id
+			  order by Max_IOPS desc ) as Maxiops,
+--Min iops
+(SELECT top 1 isnull(sum(Totaliops)/60,0)*4 as Min_IOPS,isnull(((sum(bread+bwritten)/60)/1048576),0) as Minhroughput
+              FROM #SQL_DBIO
+			  group by sample_id
+			  order by Min_iops asc ) as Miniops,
+	(
+ SELECT avg(totaliops)as AVG_IOPS,avg(throughput) as AVG_Throughput from  AVGIO) as AVGIOP
+
+
+--SELECT @totaliops=isnull(sum(Totaliops)/60,0) ,@Throughput=isnull(((sum(bread+bwritten)/60)/1048576),0)
+  --            FROM #SQL_DBIO
 SELECT   @Edition=case  WHEN CONVERT(VARCHAR(128),SERVERPROPERTY('Edition')) like 'Standard%' Then 'SE'
             WHEN CONVERT(VARCHAR(128),SERVERPROPERTY('Edition')) like 'Enterprise%' Then 'EE'
     end  ,
@@ -234,9 +257,13 @@ SELECT   @Edition=case  WHEN CONVERT(VARCHAR(128),SERVERPROPERTY('Edition')) lik
             WHEN CONVERT(VARCHAR(128), SERVERPROPERTY ('productversion')) like '13%' THEN '13'     
             WHEN CONVERT(VARCHAR(128), SERVERPROPERTY ('productversion')) like '14%' THEN '14' 
             WHEN CONVERT(VARCHAR(128), SERVERPROPERTY ('productversion')) like '15%' THEN '15' 
+			WHEN CONVERT(VARCHAR(128), SERVERPROPERTY ('productversion')) like '16%' THEN '15' 
                Else '12'
         end 
- 
+
+--select * from #SQL_CPUCollection 
+--select * from #SQL_DBIO
+--select * from #SQL_MemCollection
  
  
  select @servername as Servername ,@cpurecomm as cpurecomm, @cpuutilization as cpuUtilization,@Cpupercentile as cpu95percentile,@Logical_CPU_Count as CU_count,@MaxMemory as MaxMemory
