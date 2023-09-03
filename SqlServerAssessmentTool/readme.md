@@ -35,7 +35,7 @@ For Sql server authentication:
 
 **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60**
 
- -- The assessment will run against c:\RDSTool\out\RdsDiscovery.CSV
+ -- The assessment by default will run against c:\RDSTool\out\RdsDiscovery.CSV
  
  **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt** 
 
