@@ -52,8 +52,7 @@ LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL
         c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  
 	c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password  -sqlserverendpoint c:\RDSTools\in\servers.txt
      
-          Note:
-	   The "Login" should be a member of the Admin Group. 
+          Note:	   The "Login" should be a member of the Admin Group. 
 	   
  **By default, the tool will run and generate a report without RDS Recommendation. For recommendations, run the tool with -options RDS.**
  
