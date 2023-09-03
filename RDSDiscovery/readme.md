@@ -24,9 +24,8 @@ https://calendly.com/rdstools/30min.
      C:\RDSTools\upload
 
       
-  The "In" directory will have 3 files - "Serverstemplate", AWSInstances.xlsx, and LimitationQueries.sql.
 
-Using the Server Template as a guide, create a list of all your servers. You can use IP or ServerName, and if your port is not Default port, enter the port as well, i.e. servername,1435 or xxx.xxx.xxx.xxx,1435. Save the file in the "In" directory. Once the server list has been created, you should be ready to run the tool.
+Using the Server Template ocated in  c:\Rdstools\In  as a guide, create a list of all your servers. You can use IP or ServerName, and if your port is not Default port, enter the port as well, i.e. servername,1435 or xxx.xxx.xxx.xxx,1435. Save the file in the "In" directory. Once the server list has been created, you should be ready to run the tool.
 
 LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL and run it locally on your server to get a feel for the script.
 
