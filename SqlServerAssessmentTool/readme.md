@@ -35,21 +35,21 @@ For Sql server authentication:
 
 **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60**
 
- -- The assessment by default will run against c:\RDSTool\out\RdsDiscovery.CSV
+ -- TBy default the SqlAssessment tool will run using the list of servers from the rdsdiscovery output c:\RDSTool\out\RdsDiscovery.CSV
  
  **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt** 
 
--- the assessment will run againt list of servers in  servers.txt
+--Otherwise you can run the Sqlassessment against the list of server in C:\rdstools\Servers.txt
 
 for Windows authentication:
 
  **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60**
 
- -- The assessment will run against c:\RDSTools\out\RdsDiscovery.CSV
+ --By default the SqlAssessment tool will run using the list of servers from the rdsdiscovery output c:\RDSTool\out\RdsDiscovery.CSV
  
 **C:\RDSTools>SqlServerAssessment.bat -auth W -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt**
 
--- the assessment will run against list of servers in  servers.txt
+--  Otherwise you can run the Sqlassessment against the list of server in C:\rdstools\Servers.txt
 
 Input Parameters:
 
