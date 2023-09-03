@@ -84,7 +84,7 @@ The tool will generate 4 files per Server in CSV format, th files will be placed
 * SQLDB_IO: User and tempdb, Total IOPS, MB Read and Write per collection time (collection time is one minute)
 * CPUinfo: Server CPU Information 
 
-One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will analyze CPU and Memory data collected during the timeframe and make recommendation .
+One “SQLAssessmentOutput” file  is generated as well for all  sql servers assessed , the tool will analyze CPU,Memory and Iops data collected during the timeframe and make recommendation .
 ![image](https://user-images.githubusercontent.com/95581204/210282135-52584f43-32f0-4fb0-8477-8f954e3ba892.png)
 
 Each Metric will have one of the 3 recommendations :
