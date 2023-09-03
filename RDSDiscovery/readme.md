@@ -33,8 +33,7 @@ LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL
    
 
  ## Prerequisites
- The script will only work on Windows with PowerShell Script and Excel Sheet. The Excel sheet is needed for the RDS recommendation. You can still run the tool without  Excel Sheet. It will just not generate the RDS instance recommendation. Sqlserver module needs to be imported and installed into your PowerShell. TCP port has to be opened to your SQL Server(s).
- 
+ The script will only work on Windows with PowerShell Script ,Sqlserver module needs to be imported and installed into your PowerShell. TCP port has to be opened to your SQL Server(s) , and Sql Server sysadmin login is  needed for your fleet of Sql Server.
   ## Execution
   
   The tool will run from the CMD prompt in 2 different modes, Windows authentication mode or SQL server authentication mode:
