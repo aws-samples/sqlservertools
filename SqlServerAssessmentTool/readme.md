@@ -35,7 +35,7 @@ For Sql server authentication:
 
 **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60**
 
- -- TBy default the SqlAssessment tool will run using the list of servers from the rdsdiscovery output c:\RDSTool\out\RdsDiscovery.CSV
+ -- By default the SqlAssessment tool will run using the list of servers from the rdsdiscovery output c:\RDSTool\out\RdsDiscovery.CSV
  
  **C:\RDSTools>SqlServerAssessment.bat -auth S -login Sql -Password Password -collectiontime 60 -sqlserverendpoint c:\RDSTools\in\servers.txt** 
 
