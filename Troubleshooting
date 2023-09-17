@@ -1,7 +1,7 @@
  Troubleshooting
 1- Error  "Invoke-sqlcmd' command was found in the module  'SQLPs', but the module could not be loaded ...
    it means  the sqlserver PS module is not loaded into your system
-    To install the PowerShell module for SQl server, first make sure you start PowerShell as admin.
+    To install the PowerShell module for SQL server, first make sure you start PowerShell as admin.
     then run below command separately
       1-Set-ExecutionPolicy RemoteSigned
 
@@ -9,17 +9,17 @@
 
       3-Import-Module sqlserver -DisableNameChecking;
 
-    Once this is done you can verify that  sqlserver module has been successfuly by running blow  command 
+    Once this is done you can verify that  sqlserver module has been successful by running blow  command 
 
     Get-Module -name sqlserver 
 2- Invoke-sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser
    Try to run  the sript or the bat file as administrator 
 3-Error Error
 
-_ invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, 
+_ invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. (Provider: SSL Provider, 
   error: 0 - The certificate chain was issued by an authority that is not trusted.) _
 
- This error is  due to the new update for powershell where encryption is Mandatory by default. the fix to this is to add -encrypt optional to the invoke-sqlcmd command 
+ This error is due to a new update for Powershell where encryption is mandatory by default. the fix to this is to add -encrypt optional to the invoke-sqlcmd command 
  please reach out if you are getting this error.
 
 
