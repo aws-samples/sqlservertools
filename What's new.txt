@@ -1,23 +1,24 @@
-Bug Fixes and update
+Bug Fixes and updates
+9/17/2023 Added EBS recommendation based on IOPS.
 8/27/2023 Added a new Script "RDSReccomendation" that  works as a simulator for RDs instanse sizing , it takes CPU,Mem,IOPS,Throughput,MEMUtulization,CPUUtulzation
-8/27/2023 Fixed bugs realated to RDS recommendation when CPU to Memory ratio is  larger than 8 (i.e 15 and 30)
-8/27/2023 Added Elasticache assessment  to the Rdsdiscover and Sql assessement.
-8/27/2023 added db level output report , that generate detailed  DB Level  IOPS ,throughput,Memory usage,DB  Size,and latency 
+8/27/2023 Fixed bugs related to RDS recommendation when CPU to Memory ratio is larger than 8 (i.e 15 and 30)
+8/27/2023 Added Elasticache assessment to the Rdsdiscover and Sql assessment.
+8/27/2023 added db level output report, that generate detailed  DB Level  IOPS ,throughput,Memory usage,DB  Size,and latency 
 8/27/2023 adjusted the iops to EBS(AWs) optimized IOPS (64 K to 16 KB)
 8/27/2023 added a more detailed iops (Min,Max,Avg)
 8/27/2023 filtering out negative iops( negative iops are dude to server reboot)
-4/17/2023 adding summary in HTML format for both Tools Rdsdiscovery and Sql Assessmnet .
+4/17/2023 adding summary in HTML format for both Tools Rdsdiscovery and SQL Assessment.
 4/17/2023 Removed dependency on Excel Sheet.
 4/17/2023 adding dbmem option to sql assessment to Generate Db memory consumption 
 4/17/2023 fixed a bug in scaling up for iops.
 4/17/2023 added a parameter for the "SA" login for servers that have the sa login renamed.
 4/17/2023 set a default collection time to 60 minutes.
 2/20/2023  The Tool will not error out on excel sheet if excel is not installed 
-2/20/2023   added the  iops and trhoughput as part of scaling up .
+2/20/2023   added the  iops and trhoughput as part of scaling up.
 1/30/2023  updated null in the Awsinstance excel sheet.
 1/22/2023 Fixed Issue with instance sizing with High  IOps and throughput 
-1/19/2023 Fixed DB Used Space issue , it was erroring out on conversion error .
-1/11/2023 Fixed Totaliops and throughput calcualtion , they were showing 0 in previous release.
+1/19/2023 Fixed DB Used Space issue, it was erroring out on conversion error.
+1/11/2023 Fixed Totaliops and throughput calculation, they were showing 0 in the previous release.
 1/8/2023 Fixed  RDsCustom instance type recommendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
 
 
