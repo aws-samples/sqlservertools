@@ -1,4 +1,5 @@
 Bug Fixes and updates
+9/27/2023 Bug with the Throughput reading causing wrong RDS Recommendation.
 9/17/2023 Added EBS recommendation based on IOPS.
 8/27/2023 Added a new Script "RDSReccomendation" that  works as a simulator for RDs instanse sizing , it takes CPU,Mem,IOPS,Throughput,MEMUtulization,CPUUtulzation
 8/27/2023 Fixed bugs related to RDS recommendation when CPU to Memory ratio is larger than 8 (i.e 15 and 30)
