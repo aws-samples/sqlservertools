@@ -22,4 +22,9 @@ _ invoke-sqlcmd : A connection was successfully established with the server, but
  This error is due to a new update for Powershell where encryption is mandatory by default. the fix to this is to add -encrypt optional to the invoke-sqlcmd command 
  please reach out if you are getting this error.
 
+4 invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. - Provider: SSL Provider, error: 0 - The 
+The certificate chain was issued by an authority that is not trusted.)
+_
+
+Before I make a fix, please reach out to bacrifai@amazon.com for workaround.
 
