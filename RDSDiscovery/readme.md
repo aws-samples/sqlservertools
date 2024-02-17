@@ -75,6 +75,8 @@ LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL
 The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
 
 The excel sheet will be  placed in c:\RDSTools\out
+![image](https://github.com/aws-samples/sqlservertools/assets/95581204/76df621b-8a8f-4e3c-ae93-9ab3e711b561)
+
 
 ## Troubleshooting
 If you receive error similar to the one below , that means the sqlserver PS module is not loaded into your system 
