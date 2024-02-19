@@ -1,10 +1,10 @@
 Bug Fixes and updates
-2/17/2024  Adding total dbcount to the output 
-2/17/2024 fixing the Manual upload bug
+2/17/2024  Adding total dbcount to the SSAT output 
+2/17/2024 fixing a bug related to the manaual assessmsnet 
 2/17/2024 adding Sql server 2022 support
-2/17/2024 adding X2iedn support RDS  and M6i/R6i RDSCustom
-2/17/2024 Fixing DBLevel output 
-2/17/2024 Adding Total DB Size to the output 
+2/17/2024 adding X2iedn support for RDS  and M6i/R6i for  RDSCustom
+2/17/2024 Fixinga bug in  DBLevel metrics output
+2/17/2024 Adding Total DB Size to the SSAT output 
 9/27/2023 Bug with the Throughput reading causing wrong RDS Recommendation.
 9/17/2023 Added EBS recommendation based on IOPS.
 8/27/2023 Added a new Script "RDSReccomendation" that  works as a simulator for RDs instanse sizing , it takes CPU,Mem,IOPS,Throughput,MEMUtulization,CPUUtulzation
