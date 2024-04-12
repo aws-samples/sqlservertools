@@ -1,3 +1,4 @@
+https://aws.amazon.com/blogs/database/automate-sql-server-discovery-and-assessment-to-accelerate-migration-to-aws/
 
 # SqlServerTools
 SQLServerTools is a repository dedicated to helping customers migrate their workload into AWS. The aim of this project is to ease the journey and make migration easier through automation and tooling.
