@@ -1,1 +1,26 @@
-Runemefirst is a frontEnd created to enahnce the user experience.
+The RunmeFirst script is a PowerShell script that provides a graphical user interface (GUI) to interact with various SQL Server migration tools, including SSAT (SQL Server Assessment Tool), RDS Discovery, and Health Check.
+
+Instructions
+Run the runmefirst.bat script by executing the following command:
+
+.\runmefirst.bat
+The GUI window will appear, allowing you to select the script to run, enter the necessary parameters, and execute the selected tool.
+
+GUI Elements
+Script to Run: Select the script you want to run (SSAT, RDS Discovery, or Health Check).
+Instructions: Click the "Instructions" button to view detailed instructions for the selected script.
+Auth: Select the authentication method (SQL or Windows).
+Login: Enter the login credentials (username and password) for the selected authentication method.
+Collection Time: For the SSAT script, this field specifies the data collection time in minutes.
+Endpoint: Enter the file path (e.g., C:\rdstools\in\servers.txt) containing the list of SQL Server instances to be analyzed.
+SA: For the SSAT script, enter the SA (system administrator) account login if it has been renamed.
+Options: Select the desired options for the selected script.
+Elasticache: For the SSAT script, enable this option to include Amazon ElastiCache recommendations.
+TCOOnly: For the SSAT script, enable this option to generate a TCO (Total Cost of Ownership) report only.
+Admin DB: Specify the database to be used for the data collection (default is MSDB).
+Run: Click the "Run" button to execute the selected script with the provided parameters.
+Stop: Click the "Stop" button to close the GUI window.
+Disclaimer
+This tool is a personal effort to simplify and accelerate SQL Server migration to RDS. It is not supported by AWS. The PowerShell script for SSAT or RDS Discovery will continue to run independently of the frontend.
+The frontend will just pass the parameters to the script. Due to this, the frontend may appear unresponsive at times if an input is needed through the command prompt.
+If you have any comments or questions, please reach out to the creator directly at bobtherdsman@gmail.com.
