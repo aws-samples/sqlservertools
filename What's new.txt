@@ -1,4 +1,7 @@
 Bug Fixes and updates
+7/1/2024  Change the SSAT module to run on any DB , and  adding support to RDS 
+7/1/2024  RDstools now support IO@ https://aws.amazon.com/blogs/aws/amazon-rds-now-supports-io2-block-express-volumes-for-mission-critical-database-workloads/
+7/1/2024  Rdstools has a front end to enhance user experience.
 2/17/2024  Adding total dbcount to the SSAT output 
 2/17/2024 fixing a bug related to the manaual assessmsnet 
 2/17/2024 adding Sql server 2022 support
