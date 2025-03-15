@@ -12,11 +12,11 @@ For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot 
 https://calendly.com/rdstools/30min.
 
 ## Installation
-1.Download the Tool on c:\ drive 
+1. Download the zip file **RDSTools.zip** on c:\ drive 
 
-2.extract the zip file on c:\RDSTools
+2. Extract the zip file to the **C:\RDSTools**
 
-3.Once unzipped it should look like this:
+3. Verify the following directory structure: (sub-folders should exist)
 
      C:\RDSTools 
      C:\RDSTools\IN 
@@ -24,12 +24,35 @@ https://calendly.com/rdstools/30min.
      C:\RDSTools\upload
 
       
+4. Update the server template **c:\RDSTools\in\servers.txt** 
 
-Using the Server Template ocated in  c:\Rdstools\In  as a guide, create a list of all your servers. You can use IP or ServerName, and if your port is not Default port, enter the port as well, i.e. servername,1435 or xxx.xxx.xxx.xxx,1435. Save the file in the "In" directory. Once the server list has been created, you should be ready to run the tool.
+Use the provided Server Template to create your server list
 
-LimitationQueries.sql is the SQL that is used in the tool. You can take this SQL and run it locally on your server to get a feel for the script.
+Format entries as:
+FQDN
+servername
+servername,1435
+xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx,1435
 
-   
+Server Template file located at  **c:\Rdstools\In\serverstemplate** as a guide.
+
+**Example to create a list of all your servers using FQDN**
+mysqlserver01.example.com
+mysqlserver02.example.com
+mysqlserver03.example.com,1435
+
+
+**Example to create a list of all your servers using FQDN**
+mysqlserver01
+mysqlserver02
+mysqlserver03,1435
+
+**Example to create a list of all your servers using FQDN**
+10.0.0.101
+10.0.0.102
+10.0.0.103,1435
+
 
  ## Prerequisites
  The script will only work on Windows with PowerShell Script ,Sqlserver module needs to be imported and installed into your PowerShell. TCP port has to be opened to your SQL Server(s) , and Sql Server sysadmin login is  needed for your fleet of Sql Server.
