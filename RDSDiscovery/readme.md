@@ -48,16 +48,16 @@ Server Template file located at  **c:\Rdstools\In\serverstemplate** as a guide.
 - mysqlserver02
 - mysqlserver03,1435
 
-**Example to create a list of all your servers using FQDN**
+### Example to create a list of all your servers using FQDN
 - 10.0.0.101
 - 10.0.0.102
 - 10.0.0.103,1435
 
 
-## Prerequisites
+### Prerequisites
  The script will only work on Windows with PowerShell Script ,Sqlserver module needs to be imported and installed into your PowerShell. TCP port has to be opened to your SQL Server(s) , and Sql Server sysadmin login is  needed for your fleet of Sql Server.
 
-## Execution
+### Execution
   
   The tool will run from the CMD prompt in 2 different modes, Windows authentication mode or SQL server authentication mode:
 
