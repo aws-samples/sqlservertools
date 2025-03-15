@@ -18,10 +18,10 @@ https://calendly.com/rdstools/30min.
 
 3. Verify the following directory structure: (sub-folders should exist)
 
-     C:\RDSTools 
-     C:\RDSTools\IN 
-     C:\RDSTools\Out
-     C:\RDSTools\upload
+    - C:\RDSTools 
+    - C:\RDSTools\IN 
+    - C:\RDSTools\Out
+    - C:\RDSTools\upload
 
       
 4. Update the server template **c:\RDSTools\in\servers.txt** 
