@@ -27,7 +27,7 @@ You can perform the initial assessment with RDS Discovery:
 3. Identify SQL Server Enterprise edition features in use.
 
 
-## SqlServerAssessment (SSAT)
+## SQL Server Assessment (SSAT)
 
 The SQLServerAssessment Tool (SSAT) streamlines the evaluation of your on-premises SQL Server workloads to find the necessary system utilization for proper sizing on Amazon RDS. SSAT efficiently measures CPU, memory, IOPS, and throughput usage over a specified time frame, providing tailored suggestions to right-sizing your SQL Server on AWS. This tool is capable of assessing both single and multiple SQL Server instances.
 
