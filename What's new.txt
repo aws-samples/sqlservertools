@@ -1,4 +1,6 @@
 Bug Fixes and updates
+3/20/2025 Changes to the HTML executive summary , it shows more details
+3/20/2025 Removed the  questionnaire 
 7/1/2024  Change the SSAT module to run on any DB , and  adding support to RDS 
 7/1/2024  RDstools now support IO2 https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-rds-sql-server-64tib-256000-iops-io2-block-express-volumes/
 7/1/2024  Rdstools has a front end to enhance user experience.
