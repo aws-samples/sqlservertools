@@ -1,26 +1,66 @@
- Troubleshooting
-1- Error  "Invoke-sqlcmd' command was found in the module  'SQLPs', but the module could not be loaded ...
-   it means  the sqlserver PS module is not loaded into your system
-    To install the PowerShell module for SQL server, first make sure you start PowerShell as admin.
-    then run below command separately
-      1-Set-ExecutionPolicy RemoteSigned
+# SQL Server PowerShell Troubleshooting Guide
 
-      2-Install-module -Name sqlserver
+This guide helps resolve common issues when working with SQL Server PowerShell modules and commands.
 
-      3-Import-Module sqlserver -DisableNameChecking;
+## Common Errors and Solutions
 
-    Once this is done you can verify that  sqlserver module has been successful by running blow  command 
+### 1. Module Loading Error
 
-    Get-Module -name sqlserver 
-2- Invoke-sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser
-   Try to run  the sript or the bat file as administrator 
-3-Error Error
- invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. - Provider: SSL Provider, error: 0 - The 
-The certificate chain was issued by an authority that is not trusted.)
-in this Case Inovke-sqlcmd needs to run with this option -TrustServerCertificate
-for example:
- $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database $DBName -query $sql -TrustServerCertificate
+**Error:** `'Invoke-sqlcmd' command was found in the module 'SQLPs', but the module could not be loaded...`
 
-4- the specified module 'SQLSERVER' was not loaded  becuase no vaild module file was found in any module directory 
- you are getting this error  because sqlserve module is not  loaded, open a powershell as admin and run this command 
+**Solution:** The SQLServer PowerShell module is not loaded on your system.
+
+To install the PowerShell module for SQL Server:
+
+1. Start PowerShell as administrator
+2. Run the following commands separately:
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned
+   Install-Module -Name SQLServer
+   Import-Module SQLServer -DisableNameChecking
+   ```
+
+3. Verify the module has been loaded successfully:
+   ```powershell
+   Get-Module -Name SQLServer
+   ```
+
+### 2. Assembly Loading Error
+
+**Error:** `Invoke-sqlcmd : Could not load file or assembly 'Microsoft.SqlServer.BatchParser'`
+
+**Solution:** Try running the script or batch file as administrator.
+
+### 3. SSL Certificate Error
+
+**Error:** `Invoke-sqlcmd : A connection was successfully established with the server, but then an error occurred during the login process. - Provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.`
+
+**Solution:** Use the `-TrustServerCertificate` parameter with `Invoke-sqlcmd`:
+
+```powershell
+$SQLStatus = Invoke-sqlcmd -ServerInstance $dbserver -Database $DBName -Query $sql -TrustServerCertificate
+```
+
+This issue has been fixed in the latest release of the SQLServer module.
+
+### 4. Parameter Not Found Error
+
+**Error:** `An Error Occurred : A Parameter cannot be found that matches parameter name "TrustServerCertificate"`
+
+**Solution:** This occurs when PowerShell is using the "SQLPS" module instead of "SQLServer". The latest release will import the "SQLServer" module at the beginning.
+
+If you don't have the module installed, run:
+
+```powershell
 Install-Module -Name SqlServer -AllowClobber -Force
+```
+
+### 5. Module Not Found Error
+
+**Error:** `The specified module 'SQLSERVER' was not loaded because no valid module file was found in any module directory`
+
+**Solution:** The SQLServer module is not installed. Open PowerShell as administrator and run:
+
+```powershell
+Install-Module -Name SqlServer -AllowClobber -Force
+```
