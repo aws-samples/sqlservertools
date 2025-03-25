@@ -21,7 +21,6 @@ in this Case Inovke-sqlcmd needs to run with this option -TrustServerCertificate
 for example:
  $SQLStatus = Invoke-sqlcmd -serverInstance $dbserver -Database $DBName -query $sql -TrustServerCertificate
 
- please reach out to bacrifai@amazon.com for the script.
-4- the specified module 'SQLSERVER' was not loaded  becuase no vaild module fle was found in any modu;e directory 
- you are getting this error  becuae sqlserve module is not  loaded, open a powershell as admin and run this command 
+4- the specified module 'SQLSERVER' was not loaded  becuase no vaild module file was found in any module directory 
+ you are getting this error  because sqlserve module is not  loaded, open a powershell as admin and run this command 
 Install-Module -Name SqlServer -AllowClobber -Force
