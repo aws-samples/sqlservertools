@@ -43,12 +43,12 @@ Server Template file located at  **c:\Rdstools\In\serverstemplate** as a guide.
 - mysqlserver03.example.com,1435
 
 
-### Example to create a list of all your servers using FQDN
+### Example to create a list of all your servers using Hostname
 - mysqlserver01
 - mysqlserver02
 - mysqlserver03,1435
 
-### Example to create a list of all your servers using FQDN
+### Example to create a list of all your servers using IP ADDRESSES
 - 10.0.0.101
 - 10.0.0.102
 - 10.0.0.103,1435
