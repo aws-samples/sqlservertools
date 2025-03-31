@@ -54,6 +54,7 @@ If you don't have the module installed, run:
 ```powershell
 Install-Module -Name SqlServer -AllowClobber -Force
 ```
+Note that you would  need to use the GUI Runmefirst.bat , if you are running the powershell from command prompt and sqlps is the default module you would  run into the above error .
 
 ### 5. Module Not Found Error
 
