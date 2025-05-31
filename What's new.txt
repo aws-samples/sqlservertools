@@ -1,4 +1,5 @@
 Bug Fixes and updates
+5/31/2025 remove old instances R5,M5,X1
 3/20/2025 Changes to the HTML executive summary , it shows more details
 3/20/2025 Removed the  questionnaire 
 7/1/2024  Change the SSAT module to run on any DB , and  adding support to RDS 
