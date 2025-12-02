@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output Files
+*.csv
+!AwsInstancescsv.csv
+
+# Sensitive
+.env
+*.log
+credentials.txt
+
+# Temporary
+delete/
+temp/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup directories
+rdsmcpbackup/
+v1/
+v2/
