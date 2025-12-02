@@ -35,8 +35,8 @@ Open Command Prompt or PowerShell:
 
 ```cmd
 # Clone repository
-git clone https://github.com/bobtherdsman/RDSMCP.git
-cd RDSMCP
+git clone https://github.com/aws-samples/sqlservertools.git
+cd sqlservertools\rdsmcp
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -254,4 +254,4 @@ MIT License
 
 ## Support
 
-For issues or questions, please open an issue on GitHub.
+For issues or questions, please open an issue on GitHub: https://github.com/aws-samples/sqlservertools/issues

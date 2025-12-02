@@ -29,8 +29,8 @@ Get started with RDSMCP in 5 minutes.
 ### Step 4: Clone and Setup
 ```powershell
 # Clone repository
-git clone https://github.com/bobtherdsman/RDSMCP.git
-cd RDSMCP
+git clone https://github.com/aws-samples/sqlservertools.git
+cd sqlservertools\rdsmcp
 
 # Create virtual environment
 python -m venv venv
@@ -318,5 +318,5 @@ Kiro: SSIS was detected but it's informational only. You'll need to migrate
 ## Support
 
 For issues or questions:
-- Open an issue on GitHub: https://github.com/bobtherdsman/RDSMCP/issues
+- Open an issue on GitHub: https://github.com/aws-samples/sqlservertools/issues
 - Review troubleshooting guide: [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
