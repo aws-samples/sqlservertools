@@ -1,7 +1,7 @@
 Bug Fixes and updates
 12/4/2025 Added SSRS and SSIs check columns those are informational only.
 12/4/2025  removed elasitcache assessment 
-8/2/2025 Fixed the issue with the collectiontime validation, it was not allowubf  the  job to run more than 24 hours.
+8/2/2025 Fixed the issue with the collectiontime validation, it was not allowing  the  job to run more than 24 hours.
 5/31/2025 remove old instances R5,M5,X1
 3/20/2025 Changes to the HTML executive summary , it shows more details
 3/20/2025 Removed the  questionnaire 
@@ -36,6 +36,7 @@ Bug Fixes and updates
 1/19/2023 Fixed DB Used Space issue, it was erroring out on conversion error.
 1/11/2023 Fixed Totaliops and throughput calculation, they were showing 0 in the previous release.
 1/8/2023 Fixed  RDsCustom instance type recommendation. ( RDS Custom db.r5.xlarge–db.r5.24xlarge db.m5.xlarge–db.m5.24xlarge)
+
 
 
 
