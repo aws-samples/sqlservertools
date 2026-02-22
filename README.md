@@ -86,10 +86,4 @@ Your input directly shapes future enhancements to RDS Discovery, SSAT, and SSATW
 👉 Feedback Form:
 https://app.smartsheet.com/b/form/8d23ba71313048b884876896b30a68d9
 
-If you want:
-✅ a LinkedIn-ready version,
-✅ a short email announcement,
-✅ a README.md version,
-✅ or a slide version for presentations,
 
-I can generate those instantly.
