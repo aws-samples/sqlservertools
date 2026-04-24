@@ -1,14 +1,4 @@
-this Github is not longer updated for better expereince please check https://rdstools.info
-
-
-Try it here: https://srepimhwyj.us-east-1.awsapprunner.com/
-
-We’re excited to announce SSATWeb, a fully web-based version of the SQL Server Assessment Tool (SSAT).
-Your feedback is welcome and appreciated as we continue improving the experience.
-
-🔒 Note: Registration is required, but no data is collected, stored, or persisted. All information is processed in-memory to protect your privacy and security.
-
-👉 Traditional method is still available for users who prefer running SSAT locally or via the original command-line workflow.
+This Github is not longer updated for better expereince please check https://rdstools.info
 
 🔍 Automate SQL Server Discovery & Assessment for AWS Migrations
 
