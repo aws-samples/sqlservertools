@@ -1,4 +1,5 @@
-New Release: SSATWeb
+this Github is not longer updated forbetter expereince please check https://rdstools.info
+
 
 Try it here: https://srepimhwyj.us-east-1.awsapprunner.com/
 
