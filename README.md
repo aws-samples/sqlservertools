@@ -1,4 +1,4 @@
-this Github is not longer updated forbetter expereince please check https://rdstools.info
+this Github is not longer updated for better expereince please check https://rdstools.info
 
 
 Try it here: https://srepimhwyj.us-east-1.awsapprunner.com/
