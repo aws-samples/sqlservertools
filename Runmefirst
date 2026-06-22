@@ -1,0 +1,62 @@
+A PowerShell-based graphical user interface (GUI) that simplifies interaction with various SQL Server migration tools, including SSAT (SQL Server Assessment Tool), RDS Discovery, and Health Check.
+🚀 Getting Started
+Prerequisites
+
+Windows PowerShell
+SQL Server instances to analyze
+Appropriate access credentials
+
+Installation & Usage
+
+Run the application
+bash.\runmefirst.bat
+
+GUI Interface
+The application window will appear with all necessary configuration options.
+
+🖥️ GUI Elements
+Core Configuration
+Field             Description
+Script to Run     Select your desired tool (SSAT, RDS Discovery, or Health Check)
+Auth              Choose authentication method (SQL or Windows)
+Login             Enter username and password for selected authentication
+EndpointFile      path to server list (e.g., C:\rdstools\in\servers.txt)
+
+
+SSAT-Specific Options
+Field                Description 
+Collection Time      Data collection duration in minutes
+SA                   System administrator account login (if renamed)
+Admin DB             Database for data collection (default: MSDB)
+
+Advanced Options
+
+Elasticache: Include Amazon ElastiCache recommendations
+TCOOnly: Generate Total Cost of Ownership report only
+
+Controls
+
+Instructions: View detailed instructions for selected script
+Run: Execute the selected script with provided parameters
+Stop: Close the GUI window
+
+📋 Server List Format
+Create a text file (e.g., servers.txt) containing your SQL Server instances:
+server1.domain.com
+server2.domain.com,1433
+192.168.1.100\SQLEXPRESS
+
+⚠️ Important Notes
+
+Independent Execution: PowerShell scripts run independently of the frontend
+UI Responsiveness: Frontend may appear unresponsive when command prompt input is required
+Personal Project: This is a community tool to accelerate SQL Server migration to RDS
+No AWS Support: This tool is not officially supported by AWS
+
+🆘 Support
+For questions, comments, or issues, please contact:
+📧 bobtherdsman@gmail.com
+
+
+
+Disclaimer: This tool is a personal effort to simplify SQL Server migration processes. Use at your own discretion and always test in non-production environments first.
