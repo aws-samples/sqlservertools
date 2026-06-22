@@ -1,92 +1,80 @@
-## RDS Discovery Tool 
+This Github is not longer updated for better expereince please check https://rdstools.info
 
-RDS Discovery Tool is a lightweight ,it provides a capability to scan a fleet of on-prem SQl Servers  and does
-automated checks for 20+features , validates supportability of the  enabled features on RDS, and generates a
-report which provides recommendation to migrate to RDS, RDS Custom or EC2 compatible. 
+🔍 Automate SQL Server Discovery & Assessment for AWS Migrations
 
-:warning: Although this is a non invasive script , make sure you test and run in Dev before you run the scrip in Prod 
-## License
-This library is licensed under the MIT-0 License. See the LICENSE file.
+📘 AWS Blog:
+Automate SQL Server discovery and assessment to accelerate migration to AWS
+https://aws.amazon.com/blogs/database/automate-sql-server-discovery-and-assessment-to-accelerate-migration-to-aws/
 
-## Contact 
-For help and support reach out to bacrifai@amazon.com or grab a 30 minutes slot  on my calendar:
-https://calendly.com/rdstools/30min.
+📘 GitHub Project: SQLServerTools
+A toolkit designed to help customers accelerate SQL Server migrations to AWS by automating discovery and workload assessment.
 
-## Installation
-1.Download the Tool on c:\ drive 
+📣 Feedback Form:
+We’d love to hear from you:
+https://app.smartsheet.com/b/form/8d23ba71313048b884876896b30a68d9
 
-2.extract the zip file on c:\RDSTools
+🎥 Video Demos & Tutorials:
+https://www.youtube.com/@RdsTools
 
-3.Once unzipped it should look like this:
+🧰 Overview of SQLServerTools
 
-     c:\RDSTools
-     
-    \c:\RDSDTools\IN
-    
-     \c:\RDSTools\Out
-      
-  "In" Directory will have 3 files "Serverstemplate" , AWSInstances.xlsx  and LimitationQueries.sql.
-  
-   using the Server Template as a guide create a list of all our servers , you can use IP  or ServerName and if your port is not Default port 
-   enter the port as well  i.e. servername,1435 or xxx.xxx.xxx.xxx,1435.                                                                                                    Save the file in the "In" directory. once the server list has been created, you should be ready to run the tool .
-   LimitationQueries.sql is the Sql that is used in the Tool , you can take this SQl and run it locally on your server to get a feel of the script.
-   
+SQLServerTools contains two core components that simplify and accelerate SQL Server modernization on AWS:
 
- ## Prerequisites
-  The Script will only works on windows with PowerShell Script and Excel Sheet . The Excel sheet is needed for the rds recommendation.
-  You can still run the Tool without excel Sheet it will just not generate the RDS instance Recommendation.
-  Sqlserver Module needed to be importnaed and installed into your powershell.
-  TCP port to your sql server wehther default or not needs to be opened .
-  ## Execution
-  
-  The tool will run from cmd prompt in 2 different modes Windows or Sql server :
+1️⃣ RDS Discovery (Compatibility Check)
 
-   - **Windows Authentication** 	
+A lightweight fleet-scanning tool that automatically evaluates 20+ SQL Server features for RDS supportability.
 
-      c:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt
-   - **Sql Server Authentication**
-   
-     c:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  
-     
-			   "Login"  should be member of the Admin Group.
- **By Default the Tool will run and generate all the data without RDS Recommendation , for recommendation run the tool with -options RDS**
- 
-   - **Windows Authentication** 	
+Key Capabilities:
 
-     C:\RDSTools\Rdsdiscovery.bat -auth W -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt -options rds
-     
-   - **Sql Server Authentication**
-   
-    C:\RDSTools\Rdsdiscovery.bat -auth S -login Login -password Password -Sqlserverendpoint c:\RDSDiscoveryGuide\in\servers.txt  -options rds
+Collects SQL Server inventory (version, edition, HA like FCI/AOAG, and enabled features)
 
-   For Help with Commands:
-   
-   C:\RDSTools\Rdsdiscovery.bat -options help
-   **Or you can run the Bat file if you can't or you don't want to run exe .
-   
-  
-## Ouput 	  
-    
-The discovery will take few minutes and will generate an excel sheet ( note that the Tool will take a little longer with RDS recommendation included) 
+Determines compatibility with RDS, RDS Custom, or EC2
 
-The excel sheet will be  placed in c:\RDSTools\out
+Highlights dependency on Enterprise Edition features
 
-## Troubleshooting
-If you receive error similar to te one below , that means the sqlserver PS module is not loaded into your system 
-![image](https://user-images.githubusercontent.com/95581204/194915978-410cd417-9dec-4a83-a4c5-9030cd8942fd.png)
-To install the Powershell module for sql server ,first make sure you start powershell as admin .
-then run below command seperatley
+Provides migration recommendations based on compatibility findings
 
-1-Set-ExecutionPolicy RemoteSigned
+This forms your starting point for understanding what migration paths are feasible.
 
-2-Install-module -Name sqlserver
+2️⃣ SQL Server Assessment (SSAT)
 
-3-Import-Module sqlserver -DisableNameChecking;
+SSAT analyzes SQL Server workload patterns to ensure accurate right-sizing on AWS.
 
-Once this is done and to verify sqlserver module has been successfuly loaded run below command
- ## Get-Module -name sqlserver 
- ![image](https://user-images.githubusercontent.com/95581204/194916928-de163bf1-6106-4fb4-ad33-187bc11afa0c.png)
+What SSAT Measures:
 
+CPU utilization
 
+Memory consumption
+
+IOPS and throughput
+
+Peak vs average workload patterns
+
+Output:
+Tailored recommendations for RDS instance classes, storage types, and sizing options—based on your real SQL Server usage.
+
+SSAT works with:
+
+A list of servers you specify
+
+Or automatically consumes results from RDS Discovery
+
+🔄 Recommended Workflow (If Starting Fresh)
+Step 1 — Run RDS Discovery
+
+→ Understand SQL Server features and compatibility constraints
+
+Step 2 — Run SSAT (or SSATWeb)
+
+→ Right-size based on CPU/memory/IOPS workload patterns
+
+This combined approach gives you feature readiness + performance sizing, eliminating guesswork and reducing migration friction.
+
+🙏 We Welcome Your Feedback
+
+Your input directly shapes future enhancements to RDS Discovery, SSAT, and SSATWeb.
+
+👉 Feedback Form:
+https://app.smartsheet.com/b/form/8d23ba71313048b884876896b30a68d9
 
 
